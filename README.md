@@ -36,3 +36,7 @@ func main() {
 ​
 ```
 </h3>
+
+[![](https://img.shields.io/twitter/follow/romanzipp?label=Twitter&style=social)](https://twitter.com/romanzipp)
+[![](https://img.shields.io/github/followers/romanzipp?label=Github&style=social)](https://github.com/romanzipp)
+[![](https://img.shields.io/website?label=ich.wtf&up_message=up&url=https%3A%2F%2Fich.wtf)](https://ich.wtf)
