@@ -4,11 +4,21 @@
 ​
 package main
 
-import (
-  "fmt"
-  "encoding/json"
-)
+func main() {
 
+  me := &Person {
+    name:   "Roman Zipp"
+    status: []string{
+      "Web Developer",
+      "Student for Business Informatics"
+    }
+    stack:  Stack{
+      languages: []string{ "PHP", "JS", "Ruby", "Go" }
+    }
+  }
+
+}
+​
 type Person struct {
   name   string
   status []string
@@ -19,21 +29,6 @@ type Stack struct {
   languages string[]
 }
 
-func main() {
-
-  me := &Person {
-    name:   "Roman Zipp"
-    status: []string{ "Web Developer", "Student for Business Informatics" }
-    stack:  Stack{
-      languages: []string{ "PHP", "JS", "Ruby", "Go" }
-    }
-  }
-
-  data, _ := json.Marshal(*me)
-  
-  fmt.Println(string(data))
-}
-​
 ```
 </h3>
 
