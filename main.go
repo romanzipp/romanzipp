@@ -26,6 +26,11 @@ func main() {
 		log.Println("No env file present")
 	}
 
+	token := os.Getenv("GH_TOKEN")
+	if token == "" {
+		log.Fatalln("GH_TOKEN env value not present")
+	}
+
 	//GenerateImage([]Line{
 	//	{"Commits", "assets/icons/git-commit-outline.png", 1000},
 	//	{"Pull Requests", "assets/icons/git-pull-request-outline.png", 122},
@@ -34,7 +39,7 @@ func main() {
 	//})
 	//return
 
-	commits, prs, issues, stargazzers := GetData()
+	commits, prs, issues, stargazzers := GetData(token)
 
 	GenerateImage([]Line{
 		{"Commits", "assets/icons/git-commit-outline.png", commits},
@@ -44,10 +49,10 @@ func main() {
 	})
 }
 
-func GetData() (int, int, int, int) {
+func GetData(token string) (int, int, int, int) {
 	ctx := context.Background()
 	ts := oauth2.StaticTokenSource(
-		&oauth2.Token{AccessToken: os.Getenv("GITHUB_TOKEN")},
+		&oauth2.Token{AccessToken: token},
 	)
 	tc := oauth2.NewClient(ctx, ts)
 
