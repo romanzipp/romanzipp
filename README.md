@@ -1,6 +1,6 @@
 | Package                                                                                         | ^PHP | ^Laravel | PHPStan | Laravel 9 | Laravel 8 | PHP 8 |
 | ----------------------------------------------------------------------------------------------- | ---- | -------- | ------- | --------- | --------- | ----- |
-| [**DTO**](https://github.com/romanzipp/DTO)                                                     | 7.4  | -        | ✅       | -         | -         | ✅     |
+| ![](/logos/php.png) [**DTO**](https://github.com/romanzipp/DTO)                                                     | 7.4  | -        | ✅       | -         | -         | ✅     |
 | ![](/logos/laravel.png) [**Laravel-Blockade**](https://github.com/romanzipp/Laravel-Blockade)                           | 7.1  | 5.5      | ✅       | ❌         | ✅         | ✅     |
 | [**Laravel-Console-List-Columns**](https://github.com/romanzipp/Laravel-Console-List-Columns)   | 7.2  | 5.5      | ✅       | ❌         | ✅         | ✅     |
 | [**Laravel-Env-Diff**](https://github.com/romanzipp/Laravel-Env-Diff)                           | 7.2  | 5.5      | ✅       | ❌         | ✅         | ✅     |
