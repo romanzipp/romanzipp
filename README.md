@@ -1,3 +1,20 @@
+| Package                             | ^PHP | ^Laravel | PHPStan | Laravel 8 | PHP 8 |
+| ----------------------------------- | ---- | -------- | ------- | --------- | ----- |
+| **DTO**                             | 7.4  | -        | ✔       | -         | ✔     |
+| **Laravel-Blockade**                | 7.1  | 5.5      | ✔       | ✔         | ✔     |
+| **Laravel-Console-List-Columns**    | 7.2  | 5.5      | ✔       | ✔         | ✔     |
+| **Laravel-Env-Diff**                | 7.2  | 5.5      | ✔       | ✔         | ✔     |
+| **Laravel-Make-File-Permissions**   | 7.2  | 5.3      | ✔       | ✔         | ✔     |
+| **Laravel-Migration-Generator**     | 7.2  | 5.5      | ✔       | ✔         | ✔     |
+| **Laravel-Model-Doc ++ WIP**        | 7.4  | 8.0      | ✔       | ✔         | ✔     |
+| **Laravel-Previously-Deleted**      | 7.2  | 5.4      | ✔       | ✔         | ✔     |
+| **Laravel-Queue-Monitor**           | 7.2  | 5.5      | ✔       | ✔         | ✔     |
+| **Laravel-SEO**                     | 7.1  | 5.5      | ✔       | ✔         | ✔     |
+| **Laravel-Skeleton**                | -    | -        | ✔       | -         | ✔     |
+| **Laravel-Twitch**                  | 7.2  | 5.5      | ✔       | ✔         | ✔     |
+| **Laravel-Validator-Pizza**         | 7.2  | 5.5      | ✔       | ✔         | ✔     |
+| **PHP-CS-Fixer-Config**             | 7.1  | -        | ✔       | ✔         | ✔     |
+
 <h3>
     
 ```go
