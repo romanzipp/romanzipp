@@ -16,5 +16,5 @@ jobs:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
       - uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          commit_message: Update auto generated image
+          commit_message: Update auto generated content
           file_pattern: assets/out.png

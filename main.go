@@ -5,6 +5,7 @@ import (
 	"fmt"
 	"log"
 	"os"
+	"strings"
 
 	"github.com/fogleman/gg"
 	"github.com/google/go-github/v38/github"
@@ -12,6 +13,7 @@ import (
 	"golang.org/x/oauth2"
 	"golang.org/x/text/language"
 	"golang.org/x/text/message"
+	"gopkg.in/yaml.v2"
 )
 
 type Line struct {
@@ -20,11 +22,75 @@ type Line struct {
 	Value int
 }
 
+const (
+	STATUS_YES     = 1
+	STATUS_NO      = 0
+	STATUS_PENDING = 2
+	STATUS_NONE    = 3
+)
+
+const (
+	TYPE_PHP     = "php"
+	TYPE_LARAVEL = "laravel"
+)
+
+const (
+	LOGO_PHP     = "![](logos/php.png)"
+	LOGO_LARAVEL = "![](logos/laravel.png)"
+	LOGO_CHECK   = "![](logos/check.png)"
+	LOGO_X       = "![](logos/x.png)"
+	LOGO_DOTS    = "![](logos/dots.png)"
+)
+
+type Showcase struct {
+	Repositories []ShowcaseRepository `yaml:"repositories"`
+}
+
+type ShowcaseRepositoryType string
+
+func (t ShowcaseRepositoryType) GetLogo() string {
+	switch t {
+	case TYPE_LARAVEL:
+		return LOGO_LARAVEL
+	case TYPE_PHP:
+		return LOGO_PHP
+	}
+	return ""
+}
+
+type ShowcaseRepositoryStatus int
+
+func (b ShowcaseRepositoryStatus) GetLogo() string {
+	switch b {
+	case STATUS_YES:
+		return LOGO_CHECK
+	case STATUS_NO:
+		return LOGO_X
+	case STATUS_PENDING:
+		return LOGO_DOTS
+	}
+	return ""
+}
+
+type ShowcaseRepository struct {
+	Title                string                   `yaml:"name"`
+	Type                 ShowcaseRepositoryType   `yaml:"type"`
+	New                  bool                     `yaml:"new"`
+	MinPHP               string                   `yaml:"min_php"`
+	MinLaravel           string                   `yaml:"min_laravel"`
+	HasPhpStan           ShowcaseRepositoryStatus `yaml:"has_php_stan"`
+	SupportsLaravelNine  ShowcaseRepositoryStatus `yaml:"supports_laravel9"`
+	SupportsLaravelEight ShowcaseRepositoryStatus `yaml:"supports_laravel8"`
+	SupportsPHPEight     ShowcaseRepositoryStatus `yaml:"supports_php8"`
+}
+
 func main() {
 	err := godotenv.Load()
 	if err != nil {
 		log.Println("No env file present")
 	}
+
+	GenerateReadme()
 
 	token := os.Getenv("GH_TOKEN")
 	if token == "" {
@@ -39,7 +105,17 @@ func main() {
 	//})
 	//return
 
-	commits, prs, issues, stargazzers := GetData(token)
+	ctx := context.Background()
+	ts := oauth2.StaticTokenSource(
+		&oauth2.Token{AccessToken: token},
+	)
+	tc := oauth2.NewClient(ctx, ts)
+
+	client := github.NewClient(tc)
+
+	repos := GetRepos(ctx, client)
+
+	commits, prs, issues, stargazzers := GetImageData(ctx, client, repos)
 
 	GenerateImage([]Line{
 		{"Commits", "assets/icons/git-commit-outline.png", commits},
@@ -49,15 +125,92 @@ func main() {
 	})
 }
 
-func GetData(token string) (int, int, int, int) {
-	ctx := context.Background()
-	ts := oauth2.StaticTokenSource(
-		&oauth2.Token{AccessToken: token},
-	)
-	tc := oauth2.NewClient(ctx, ts)
+type RTable struct {
+	Rows []RTableRow
+}
 
-	client := github.NewClient(tc)
+type RTableRow struct {
+	IsHeader bool
+	Cols     []string
+}
 
+func GenerateReadme() {
+	showcase := Showcase{}
+	data, err := os.ReadFile("showcase.yml")
+	if err != nil {
+		log.Fatalf("error reading showcase file: %v", err)
+	}
+
+	err = yaml.Unmarshal([]byte(data), &showcase)
+	if err != nil {
+		log.Fatalf("error parsing showcase file: %v", err)
+	}
+
+	table := RTable{
+		Rows: []RTableRow{
+			{
+				IsHeader: true,
+				Cols:     []string{"Package", "^PHP", "^Laravel", "PHPStan", "Laravel 9", "Laravel 8", "PHP 8"},
+			},
+			{
+				IsHeader: true,
+				Cols:     []string{"---", "---", "---", "---", "---", "---", "---"},
+			},
+		},
+	}
+
+	for _, repo := range showcase.Repositories {
+		table.Rows = append(table.Rows, RTableRow{
+			Cols: []string{
+				repo.GetTableTitle(),
+				repo.MinPHP,
+				repo.MinLaravel,
+				repo.HasPhpStan.GetLogo(),
+				repo.SupportsLaravelNine.GetLogo(),
+				repo.SupportsLaravelEight.GetLogo(),
+				repo.SupportsPHPEight.GetLogo(),
+			},
+		})
+	}
+
+	lines := make([]string, len(table.Rows))
+	for _, row := range table.Rows {
+		var line string
+		for _, lstr := range row.Cols {
+			line = line + lstr + "|"
+		}
+		lines = append(lines, "|"+line+"\n")
+	}
+
+	stub, err := os.ReadFile("README.stub.md")
+	if err != nil {
+		log.Fatalf("error reading stub file: %v", err)
+	}
+
+	content := strings.Replace(string(stub), "###repositories###", strings.Join(lines[:], ""), -1)
+
+	err = os.WriteFile("README.md", []byte(content), 0644)
+	if err != nil {
+		log.Fatalf("error writing readme: %v", err)
+	}
+}
+
+func (repo ShowcaseRepository) GetTableTitle() string {
+	return fmt.Sprintf("%s [**%s**](%s)", repo.Type.GetLogo(), repo.Title, fmt.Sprintf("https://github.com/romanzipp/%s", repo.Title))
+}
+
+func (repo ShowcaseRepository) GetBooleanImageUrl(val bool) string {
+	switch val {
+	case true:
+		return LOGO_CHECK
+	case false:
+		return LOGO_X
+	}
+
+	return ""
+}
+
+func GetImageData(ctx context.Context, client *github.Client, repos []*github.Repository) (int, int, int, int) {
 	user, _, err := client.Users.Get(ctx, "")
 	if err != nil {
 		panic(err)
@@ -69,7 +222,6 @@ func GetData(token string) (int, int, int, int) {
 	var stargazzers int
 	var commits int
 
-	repos := GetRepos(ctx, client)
 	for _, r := range repos {
 		c := GetRepoCommitCount(ctx, client, user, r)
 		//fmt.Printf("%d %s %s\n", c, strings.Repeat(" ", 8-len(fmt.Sprint(c))), *r.FullName)
