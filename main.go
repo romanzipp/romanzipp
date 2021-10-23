@@ -36,11 +36,11 @@ const (
 )
 
 const (
-	LOGO_PHP     = "![](logos/php.png)"
-	LOGO_LARAVEL = "![](logos/laravel.png)"
-	LOGO_CHECK   = "![](logos/check.png)"
-	LOGO_X       = "![](logos/x.png)"
-	LOGO_DOTS    = "![](logos/dots.png)"
+	LOGO_PHP     = "![](assets/logos/php.png)"
+	LOGO_LARAVEL = "![](assets/logos/laravel.png)"
+	LOGO_CHECK   = "![](assets/logos/check.png)"
+	LOGO_X       = "![](assets/logos/x.png)"
+	LOGO_DOTS    = "![](assets/logos/dots.png)"
 )
 
 type Showcase struct {
