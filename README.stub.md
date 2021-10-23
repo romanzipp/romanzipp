@@ -23,3 +23,6 @@ Informational static site about human environmental impacts
 ### Open Source Packages
 
 {repositories}
+
+All-time Commits: {commits}    
+Stars recevied: {stars}

@@ -6,6 +6,7 @@ import (
 	"io/ioutil"
 	"log"
 	"os"
+	"reflect"
 	"strings"
 
 	"github.com/fogleman/gg"
@@ -20,7 +21,14 @@ import (
 type Line struct {
 	Title string
 	Icon  string
-	Value int
+	Value LocalizedInt
+}
+
+type LocalizedInt int
+
+func (val LocalizedInt) PrettyPrint() string {
+	p := message.NewPrinter(language.English)
+	return p.Sprintf("%d", val)
 }
 
 const (
@@ -91,10 +99,6 @@ func main() {
 		log.Println("No env file present")
 	}
 
-	WriteReadme(
-		GenerateReadmeRepositoriesTable(),
-	)
-
 	token := os.Getenv("GH_TOKEN")
 	if token == "" {
 		log.Fatalln("GH_TOKEN env value not present")
@@ -111,6 +115,12 @@ func main() {
 	repos := GetRepos(ctx, client)
 
 	commits, prs, issues, stargazzers := GetGitHubStats(ctx, client, repos)
+
+	WriteReadme(ReadmeInformation{
+		GenerateReadmeRepositoriesTable(),
+		commits.PrettyPrint(),
+		stargazzers.PrettyPrint(),
+	})
 
 	GenerateImage([]Line{
 		{"Commits", "assets/icons/git-commit-outline.png", commits},
@@ -129,13 +139,26 @@ type RTableRow struct {
 	Cols     []string
 }
 
-func WriteReadme(repositories string) {
+type ReadmeInformation struct {
+	Repositories string `replace:"repositories"`
+	Commits      string `replace:"commits"`
+	Stars        string `replace:"stars"`
+}
+
+func WriteReadme(data ReadmeInformation) {
 	stub, err := ioutil.ReadFile("README.stub.md")
 	if err != nil {
 		log.Fatalf("error reading stub file: %v", err)
 	}
 
-	content := strings.Replace(string(stub), "{repositories}", repositories, -1)
+	content := string(stub)
+
+	for i := 0; i < reflect.TypeOf(&data).Elem().NumField(); i++ {
+		field := reflect.TypeOf(&data).Elem().Field(i)
+		name := string(field.Tag.Get("replace"))
+		value := reflect.Indirect(reflect.ValueOf(data)).FieldByName(field.Name).String()
+		content = strings.Replace(content, fmt.Sprintf("{%s}", name), value, -1)
+	}
 
 	err = ioutil.WriteFile("README.md", []byte(content), 0644)
 	if err != nil {
@@ -211,7 +234,7 @@ func (repo ShowcaseRepository) GetBooleanImageUrl(val bool) string {
 	return ""
 }
 
-func GetGitHubStats(ctx context.Context, client *github.Client, repos []*github.Repository) (int, int, int, int) {
+func GetGitHubStats(ctx context.Context, client *github.Client, repos []*github.Repository) (LocalizedInt, LocalizedInt, LocalizedInt, LocalizedInt) {
 	user, _, err := client.Users.Get(ctx, "")
 	if err != nil {
 		panic(err)
@@ -233,7 +256,7 @@ func GetGitHubStats(ctx context.Context, client *github.Client, repos []*github.
 
 	fmt.Printf("Wow, these are some %d thicc commits\n", commits)
 
-	return commits, 0, 0, stargazzers
+	return LocalizedInt(commits), LocalizedInt(0), LocalizedInt(0), LocalizedInt(stargazzers)
 }
 
 func GetRepoCommitCount(ctx context.Context, client *github.Client, user *github.User, repo *github.Repository) int {
@@ -347,10 +370,8 @@ func GenerateImage(lines []Line) {
 		dc.SetRGB(0, 0, 0)
 		dc.DrawStringAnchored(line.Title, m+10+30+20, float64(lh*(i+1)), 0, 1)
 
-		p := message.NewPrinter(language.English)
-
 		dc.SetHexColor("#ef1818")
-		dc.DrawStringAnchored(p.Sprintf("%d", line.Value), w-m-30, float64(lh*(i+1)), 1, 1)
+		dc.DrawStringAnchored(line.Value.PrettyPrint(), w-m-30, float64(lh*(i+1)), 1, 1)
 	}
 
 	dc.Clip()
