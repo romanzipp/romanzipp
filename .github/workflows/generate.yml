@@ -17,4 +17,4 @@ jobs:
       - uses: stefanzweifel/git-auto-commit-action@v4
         with:
           commit_message: Update auto generated content
-          file_pattern: assets/out.png
+          file_pattern: assets/out.png README.md
