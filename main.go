@@ -3,6 +3,7 @@ package main
 import (
 	"context"
 	"fmt"
+	"io/ioutil"
 	"log"
 	"os"
 	"strings"
@@ -136,7 +137,7 @@ type RTableRow struct {
 
 func GenerateReadme() {
 	showcase := Showcase{}
-	data, err := os.ReadFile("showcase.yml")
+	data, err := ioutil.ReadFile("showcase.yml")
 	if err != nil {
 		log.Fatalf("error reading showcase file: %v", err)
 	}
@@ -182,14 +183,14 @@ func GenerateReadme() {
 		lines = append(lines, "|"+line+"\n")
 	}
 
-	stub, err := os.ReadFile("README.stub.md")
+	stub, err := ioutil.ReadFile("README.stub.md")
 	if err != nil {
 		log.Fatalf("error reading stub file: %v", err)
 	}
 
 	content := strings.Replace(string(stub), "###repositories###", strings.Join(lines[:], ""), -1)
 
-	err = os.WriteFile("README.md", []byte(content), 0644)
+	err = ioutil.WriteFile("README.md", []byte(content), 0644)
 	if err != nil {
 		log.Fatalf("error writing readme: %v", err)
 	}
