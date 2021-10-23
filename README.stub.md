@@ -22,4 +22,4 @@ Informational static site about human environmental impacts
 
 ### Open Source Packages
 
-###repositories###
+{repositories}

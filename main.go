@@ -91,20 +91,14 @@ func main() {
 		log.Println("No env file present")
 	}
 
-	GenerateReadme()
+	WriteReadme(
+		GenerateReadmeRepositoriesTable(),
+	)
 
 	token := os.Getenv("GH_TOKEN")
 	if token == "" {
 		log.Fatalln("GH_TOKEN env value not present")
 	}
-
-	//GenerateImage([]Line{
-	//	{"Commits", "assets/icons/git-commit-outline.png", 1000},
-	//	{"Pull Requests", "assets/icons/git-pull-request-outline.png", 122},
-	//	{"Issues", "assets/icons/bug-outline.png", 205},
-	//	{"Stars", "assets/icons/star-outline.png", 4566},
-	//})
-	//return
 
 	ctx := context.Background()
 	ts := oauth2.StaticTokenSource(
@@ -116,7 +110,7 @@ func main() {
 
 	repos := GetRepos(ctx, client)
 
-	commits, prs, issues, stargazzers := GetImageData(ctx, client, repos)
+	commits, prs, issues, stargazzers := GetGitHubStats(ctx, client, repos)
 
 	GenerateImage([]Line{
 		{"Commits", "assets/icons/git-commit-outline.png", commits},
@@ -135,7 +129,23 @@ type RTableRow struct {
 	Cols     []string
 }
 
-func GenerateReadme() {
+func WriteReadme(repositories string) {
+	stub, err := ioutil.ReadFile("README.stub.md")
+	if err != nil {
+		log.Fatalf("error reading stub file: %v", err)
+	}
+
+	content := strings.Replace(string(stub), "{repositories}", repositories, -1)
+
+	err = ioutil.WriteFile("README.md", []byte(content), 0644)
+	if err != nil {
+		log.Fatalf("error writing readme: %v", err)
+	}
+
+	fmt.Println("Wrote readme")
+}
+
+func GenerateReadmeRepositoriesTable() string {
 	showcase := Showcase{}
 	data, err := ioutil.ReadFile("showcase.yml")
 	if err != nil {
@@ -183,17 +193,7 @@ func GenerateReadme() {
 		lines = append(lines, "|"+line+"\n")
 	}
 
-	stub, err := ioutil.ReadFile("README.stub.md")
-	if err != nil {
-		log.Fatalf("error reading stub file: %v", err)
-	}
-
-	content := strings.Replace(string(stub), "###repositories###", strings.Join(lines[:], ""), -1)
-
-	err = ioutil.WriteFile("README.md", []byte(content), 0644)
-	if err != nil {
-		log.Fatalf("error writing readme: %v", err)
-	}
+	return strings.Join(lines[:], "")
 }
 
 func (repo ShowcaseRepository) GetTableTitle() string {
@@ -211,7 +211,7 @@ func (repo ShowcaseRepository) GetBooleanImageUrl(val bool) string {
 	return ""
 }
 
-func GetImageData(ctx context.Context, client *github.Client, repos []*github.Repository) (int, int, int, int) {
+func GetGitHubStats(ctx context.Context, client *github.Client, repos []*github.Repository) (int, int, int, int) {
 	user, _, err := client.Users.Get(ctx, "")
 	if err != nil {
 		panic(err)
