@@ -24,5 +24,5 @@ Informational static site about human environmental impacts
 
 {repositories}
 
-All-time Commits: {commits}    
-Stars recevied: {stars}
+![](https://img.shields.io/badge/{commits}-black?style=for-the-badge&color=3053c6&label=Commits&labelColor=black)
+![](https://img.shields.io/badge/{stars}-black?style=for-the-badge&color=3053c6&label=Stars&labelColor=black)
