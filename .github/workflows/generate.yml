@@ -1,4 +1,4 @@
-name: Generate image
+name: Generate Content
 
 on:
   workflow_dispatch:
