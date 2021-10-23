@@ -6,6 +6,11 @@ Primarily working with the [Laravel](https://laravel.com) Framework and building
 
 Coding in PHP, Go, Ruby, JavaScript, Python
 
+[![](https://img.shields.io/badge/Follow_@romanzipp-blue?logo=twitter&logoColor=white&style=for-the-badge)](https://twitter.com/romanzipp)
+[![](https://img.shields.io/badge/Sponsor%20%F0%9F%A4%8D-black?logo=github&logoColor=white&style=for-the-badge&color=b34bff)](https://github.com/sponsors/romanzipp)
+[![](https://img.shields.io/badge/Linkedin-black?logo=linkedin&logoColor=white&style=for-the-badge&color=0077b5)](https://www.linkedin.com/in/romanzipp/)
+[![](https://img.shields.io/badge/ich.wtf-black?logoColor=white&style=for-the-badge&color=3053c6&label=Website&labelColor=black)](https://ich.wtf)
+
 ### Selected Projects
 
 - [**PietSmiet.de**](https://www.pietsmiet.de)    
@@ -15,10 +20,7 @@ Web service for tracking game subscriptions like Xbox Game Pass, EA Play and Ubi
 - [**Get Better**](https://get-better.me)    
 Informational static site about human environmental impacts
 
-[![](https://img.shields.io/badge/Follow_@romanzipp-blue?logo=twitter&logoColor=white&style=for-the-badge)](https://twitter.com/romanzipp)
-[![](https://img.shields.io/badge/Sponsor%20%F0%9F%A4%8D-black?logo=github&logoColor=white&style=for-the-badge&color=b34bff)](https://github.com/sponsors/romanzipp)
-[![](https://img.shields.io/badge/Linkedin-black?logo=linkedin&logoColor=white&style=for-the-badge&color=0077b5)](https://www.linkedin.com/in/romanzipp/)
-[![](https://img.shields.io/badge/ich.wtf-black?logoColor=white&style=for-the-badge&color=3053c6&label=Website&labelColor=black)](https://ich.wtf)
+### Open Source Packages
 
 | Package                                                                                                                 | ^PHP | ^Laravel | PHPStan              | Laravel 9           | Laravel 8            | PHP 8                |
 | ----------------------------------------------------------------------------------------------------------------------- | ---- | -------- | -------------------- | ------------------- | -------------------- | -------------------- |
