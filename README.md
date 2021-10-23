@@ -1,3 +1,8 @@
+[![](https://img.shields.io/badge/Follow_@romanzipp-blue?logo=twitter&logoColor=white&style=for-the-badge)](https://twitter.com/romanzipp)
+[![](https://img.shields.io/badge/Sponsor%20%F0%9F%A4%8D-black?logo=github&logoColor=white&style=for-the-badge&color=b34bff)](https://github.com/sponsors/romanzipp)
+[![](https://img.shields.io/badge/Linkedin-black?logo=linkedin&logoColor=white&style=for-the-badge&color=0077b5)](https://www.linkedin.com/in/romanzipp/)
+[![](https://img.shields.io/badge/ich.wtf-black?logoColor=white&style=for-the-badge&color=3053c6&label=Website&labelColor=black)](https://ich.wtf)
+
 | Package                                                                                                                 | ^PHP | ^Laravel | PHPStan              | Laravel 9           | Laravel 8            | PHP 8                |
 | ----------------------------------------------------------------------------------------------------------------------- | ---- | -------- | -------------------- | ------------------- | -------------------- | -------------------- |
 | ![](/logos/php.png) [**DTO**](https://github.com/romanzipp/DTO)                                                         | 7.4  |          | ![](logos/check.png) |                     |                      | ![](logos/check.png) |
