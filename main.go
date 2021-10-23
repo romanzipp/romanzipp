@@ -260,7 +260,7 @@ func GetGitHubStats(ctx context.Context, client *github.Client, repos []*github.
 }
 
 func GetRepoCommitCount(ctx context.Context, client *github.Client, user *github.User, repo *github.Repository) int {
-	pp := 50
+	pp := 100
 	clatest, res, err := client.Repositories.ListCommits(ctx, *repo.Owner.Login, *repo.Name, &github.CommitsListOptions{
 		Author: *user.Login,
 		ListOptions: github.ListOptions{
