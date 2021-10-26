@@ -127,7 +127,7 @@ repositories:
     supports_laravel8: 1
     supports_php8: 1
 
-  - name: Laravel-Validator
+  - name: Laravel-Validator-Pizza
     type: 'laravel'
     min_php: '7.2'
     min_laravel: '5.5'
