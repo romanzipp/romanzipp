@@ -41,5 +41,5 @@ Informational static site about human environmental impacts
 |![](assets/logos/laravel.png) [**Laravel-Validator-Pizza**](https://github.com/romanzipp/Laravel-Validator-Pizza)|7.2|5.5|![](assets/logos/check.png)|![](assets/logos/dots.png)|![](assets/logos/check.png)|![](assets/logos/check.png)|
 
 
-![](https://img.shields.io/badge/18,549-black?style=for-the-badge&color=3053c6&label=Commits&labelColor=black)
-![](https://img.shields.io/badge/666-black?style=for-the-badge&color=3053c6&label=Stars&labelColor=black)
+![](https://img.shields.io/badge/18,610-black?style=for-the-badge&color=3053c6&label=Commits&labelColor=black)
+![](https://img.shields.io/badge/673-black?style=for-the-badge&color=3053c6&label=Stars&labelColor=black)
