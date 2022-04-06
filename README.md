@@ -26,6 +26,7 @@ Informational static site about human environmental impacts
 |---|---|---|---|---|---|---|
 |![](assets/logos/php.png) [**DTO**](https://github.com/romanzipp/DTO)|7.4||![](assets/logos/check.png)|||![](assets/logos/check.png)|
 |![](assets/logos/php.png) [**PHP-CS-Fixer-Config**](https://github.com/romanzipp/PHP-CS-Fixer-Config)|7.1||![](assets/logos/check.png)|||![](assets/logos/check.png)|
+|![](assets/logos/laravel.png) [**Laravel-DTO**](https://github.com/romanzipp/Laravel-DTO)|8.0|9.0|![](assets/logos/check.png)|![](assets/logos/check.png)|![](assets/logos/check.png)|![](assets/logos/check.png)|
 |![](assets/logos/laravel.png) [**Laravel-Blockade**](https://github.com/romanzipp/Laravel-Blockade)|7.1|5.5|![](assets/logos/check.png)|![](assets/logos/check.png)|![](assets/logos/check.png)|![](assets/logos/check.png)|
 |![](assets/logos/laravel.png) [**Laravel-Console-List-Columns**](https://github.com/romanzipp/Laravel-Console-List-Columns)|7.2|5.5|![](assets/logos/check.png)|![](assets/logos/check.png)|![](assets/logos/check.png)|![](assets/logos/check.png)|
 |![](assets/logos/laravel.png) [**Laravel-Env-Diff**](https://github.com/romanzipp/Laravel-Env-Diff)|7.2|5.5|![](assets/logos/check.png)|![](assets/logos/check.png)|![](assets/logos/check.png)|![](assets/logos/check.png)|
@@ -41,5 +42,5 @@ Informational static site about human environmental impacts
 |![](assets/logos/laravel.png) [**Laravel-Validator-Pizza**](https://github.com/romanzipp/Laravel-Validator-Pizza)|7.2|5.5|![](assets/logos/check.png)|![](assets/logos/check.png)|![](assets/logos/check.png)|![](assets/logos/check.png)|
 
 
-![](https://img.shields.io/badge/19,504-black?style=for-the-badge&color=3053c6&label=Commits&labelColor=black)
-![](https://img.shields.io/badge/762-black?style=for-the-badge&color=3053c6&label=Stars&labelColor=black)
+![](https://img.shields.io/badge/19,602-black?style=for-the-badge&color=3053c6&label=Commits&labelColor=black)
+![](https://img.shields.io/badge/763-black?style=for-the-badge&color=3053c6&label=Stars&labelColor=black)
