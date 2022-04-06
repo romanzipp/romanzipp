@@ -17,6 +17,15 @@ repositories:
     supports_laravel8: 3
     supports_php8: 1
 
+  - name: Laravel-DTO
+    type: 'laravel'
+    min_php: '8.0'
+    min_laravel: '9.0'
+    has_php_stan: 1
+    supports_laravel9: 1
+    supports_laravel8: 1
+    supports_php8: 1
+
   - name: Laravel-Blockade
     type: 'laravel'
     min_php: '7.1'
