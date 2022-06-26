@@ -43,4 +43,4 @@ Informational static site about human environmental impacts
 
 
 ![](https://img.shields.io/badge/20,579-black?style=for-the-badge&color=3053c6&label=Commits&labelColor=black)
-![](https://img.shields.io/badge/829-black?style=for-the-badge&color=3053c6&label=Stars&labelColor=black)
+![](https://img.shields.io/badge/831-black?style=for-the-badge&color=3053c6&label=Stars&labelColor=black)
