@@ -260,6 +260,10 @@ func GetGitHubStats(ctx context.Context, client *github.Client, repos []*github.
 }
 
 func GetRepoCommitCount(ctx context.Context, client *github.Client, user *github.User, repo *github.Repository) int {
+	if *repo.Size == 0 {
+		return 0
+	}
+
 	pp := 100
 	clatest, res, err := client.Repositories.ListCommits(ctx, *repo.Owner.Login, *repo.Name, &github.CommitsListOptions{
 		Author: *user.Login,
@@ -268,7 +272,7 @@ func GetRepoCommitCount(ctx context.Context, client *github.Client, user *github
 		},
 	})
 	if err != nil {
-		panic(err)
+		return 0
 	}
 
 	if res.LastPage == 0 {
