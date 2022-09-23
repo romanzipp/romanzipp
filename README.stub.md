@@ -19,6 +19,10 @@ Videos & News Content Management System, Single Page Application, API, YouTube S
 Web service for tracking game subscriptions like Xbox Game Pass, EA Play and Ubisoft+. Currently holding 650+ games
 - [**Get Better**](https://get-better.me)    
 Informational static site about human environmental impacts
+- [**Wanderer**](https://github.com/romanzipp/Wanderer)    
+Selfhosted Nomad deployer & HCL template management tool with API & GUI
+- [**Sprinter**](https://github.com/romanzipp/Sprinter)    
+Selfhosted network monitoring tool using continious ping checks with web UI
 
 ### Open Source Packages
 
