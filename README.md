@@ -19,6 +19,10 @@ Videos & News Content Management System, Single Page Application, API, YouTube S
 Web service for tracking game subscriptions like Xbox Game Pass, EA Play and Ubisoft+. Currently holding 650+ games
 - [**Get Better**](https://get-better.me)    
 Informational static site about human environmental impacts
+- [**Wanderer**](https://github.com/romanzipp/Wanderer)    
+Selfhosted Nomad deployer & HCL template management tool with API & GUI
+- [**Sprinter**](https://github.com/romanzipp/Sprinter)    
+Selfhosted network monitoring tool using continious ping checks with web UI
 
 ### Open Source Packages
 
@@ -42,5 +46,5 @@ Informational static site about human environmental impacts
 |![](assets/logos/laravel.png) [**Laravel-Validator-Pizza**](https://github.com/romanzipp/Laravel-Validator-Pizza)|7.2|5.5|![](assets/logos/check.png)|![](assets/logos/check.png)|![](assets/logos/check.png)|![](assets/logos/check.png)|
 
 
-![](https://img.shields.io/badge/20,950-black?style=for-the-badge&color=3053c6&label=Commits&labelColor=black)
-![](https://img.shields.io/badge/900-black?style=for-the-badge&color=3053c6&label=Stars&labelColor=black)
+![](https://img.shields.io/badge/21,015-black?style=for-the-badge&color=3053c6&label=Commits&labelColor=black)
+![](https://img.shields.io/badge/905-black?style=for-the-badge&color=3053c6&label=Stars&labelColor=black)
