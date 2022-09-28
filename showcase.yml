@@ -127,9 +127,9 @@ repositories:
     supports_laravel8: 1
     supports_php8: 1
 
-  - name: Laravel-Twitch
+  - name: Laravel-Turnstile
     type: 'laravel'
-    min_php: '7.2'
+    min_php: '7.4'
     min_laravel: '5.5'
     has_php_stan: 1
     supports_laravel9: 1
