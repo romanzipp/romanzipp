@@ -29,7 +29,7 @@ Selfhosted network monitoring tool using continious ping checks with web UI
 |Package|^PHP|^Laravel|PHPStan|Laravel 9|Laravel 8|PHP 8|
 |---|---|---|---|---|---|---|
 |![](assets/logos/php.png) [**DTO**](https://github.com/romanzipp/DTO)|7.4||![](assets/logos/check.png)|||![](assets/logos/check.png)|
-|![](assets/logos/php.png) [**PHP-CS-Fixer-Config**](https://github.com/romanzipp/PHP-CS-Fixer-Config)|7.1||![](assets/logos/check.png)|||![](assets/logos/check.png)|
+|![](assets/logos/php.png) [**PHP-CS-Fixer-Config**](https://github.com/romanzipp/PHP-CS-Fixer-Config)|7.4||![](assets/logos/check.png)|||![](assets/logos/check.png)|
 |![](assets/logos/laravel.png) [**Laravel-DTO**](https://github.com/romanzipp/Laravel-DTO)|8.0|9.0|![](assets/logos/check.png)|![](assets/logos/check.png)|![](assets/logos/check.png)|![](assets/logos/check.png)|
 |![](assets/logos/laravel.png) [**Laravel-Blockade**](https://github.com/romanzipp/Laravel-Blockade)|7.1|5.5|![](assets/logos/check.png)|![](assets/logos/check.png)|![](assets/logos/check.png)|![](assets/logos/check.png)|
 |![](assets/logos/laravel.png) [**Laravel-Console-List-Columns**](https://github.com/romanzipp/Laravel-Console-List-Columns)|7.2|5.5|![](assets/logos/check.png)|![](assets/logos/check.png)|![](assets/logos/check.png)|![](assets/logos/check.png)|
@@ -47,5 +47,5 @@ Selfhosted network monitoring tool using continious ping checks with web UI
 |![](assets/logos/laravel.png) [**Laravel-Validator-Pizza**](https://github.com/romanzipp/Laravel-Validator-Pizza)|7.2|5.5|![](assets/logos/check.png)|![](assets/logos/check.png)|![](assets/logos/check.png)|![](assets/logos/check.png)|
 
 
-![](https://img.shields.io/badge/21,565-black?style=for-the-badge&color=3053c6&label=Commits&labelColor=black)
-![](https://img.shields.io/badge/940-black?style=for-the-badge&color=3053c6&label=Stars&labelColor=black)
+![](https://img.shields.io/badge/21,798-black?style=for-the-badge&color=3053c6&label=Commits&labelColor=black)
+![](https://img.shields.io/badge/944-black?style=for-the-badge&color=3053c6&label=Stars&labelColor=black)
