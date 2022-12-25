@@ -47,5 +47,5 @@ Selfhosted network monitoring tool using continious ping checks with web UI
 |![](assets/logos/laravel.png) [**Laravel-Validator-Pizza**](https://github.com/romanzipp/Laravel-Validator-Pizza)|7.2|5.5|![](assets/logos/check.png)|![](assets/logos/check.png)|![](assets/logos/check.png)|![](assets/logos/check.png)|
 
 
-![](https://img.shields.io/badge/22,013-black?style=for-the-badge&color=3053c6&label=Commits&labelColor=black)
-![](https://img.shields.io/badge/974-black?style=for-the-badge&color=3053c6&label=Stars&labelColor=black)
+![](https://img.shields.io/badge/22,079-black?style=for-the-badge&color=3053c6&label=Commits&labelColor=black)
+![](https://img.shields.io/badge/978-black?style=for-the-badge&color=3053c6&label=Stars&labelColor=black)
