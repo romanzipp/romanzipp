@@ -187,7 +187,7 @@ func GenerateReadmeRepositoriesTable() string {
 			},
 			{
 				IsHeader: true,
-				Cols:     []string{"---", "---", "---", "---", "---", "---", "---"},
+				Cols:     []string{"---", "---", "---", "---", "---", "---"},
 			},
 		},
 	}
