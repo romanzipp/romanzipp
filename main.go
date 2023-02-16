@@ -82,15 +82,14 @@ func (b ShowcaseRepositoryStatus) GetLogo() string {
 }
 
 type ShowcaseRepository struct {
-	Title                string                   `yaml:"name"`
-	Type                 ShowcaseRepositoryType   `yaml:"type"`
-	New                  bool                     `yaml:"new"`
-	MinPHP               string                   `yaml:"min_php"`
-	MinLaravel           string                   `yaml:"min_laravel"`
-	HasPhpStan           ShowcaseRepositoryStatus `yaml:"has_php_stan"`
-	SupportsLaravelNine  ShowcaseRepositoryStatus `yaml:"supports_laravel9"`
-	SupportsLaravelEight ShowcaseRepositoryStatus `yaml:"supports_laravel8"`
-	SupportsPHPEight     ShowcaseRepositoryStatus `yaml:"supports_php8"`
+	Title              string                   `yaml:"name"`
+	Type               ShowcaseRepositoryType   `yaml:"type"`
+	New                bool                     `yaml:"new"`
+	MinPHP             string                   `yaml:"min_php"`
+	MinLaravel         string                   `yaml:"min_laravel"`
+	HasPhpStan         ShowcaseRepositoryStatus `yaml:"has_php_stan"`
+	SupportsLaravelTen ShowcaseRepositoryStatus `yaml:"supports_laravel10"`
+	SupportsPHPEight   ShowcaseRepositoryStatus `yaml:"supports_php8"`
 }
 
 func main() {
@@ -184,7 +183,7 @@ func GenerateReadmeRepositoriesTable() string {
 		Rows: []RTableRow{
 			{
 				IsHeader: true,
-				Cols:     []string{"Package", "^PHP", "^Laravel", "PHPStan", "Laravel 9", "Laravel 8", "PHP 8"},
+				Cols:     []string{"Package", "^PHP", "^Laravel", "PHPStan", "Laravel 10", "PHP 8"},
 			},
 			{
 				IsHeader: true,
@@ -200,8 +199,7 @@ func GenerateReadmeRepositoriesTable() string {
 				repo.MinPHP,
 				repo.MinLaravel,
 				repo.HasPhpStan.GetLogo(),
-				repo.SupportsLaravelNine.GetLogo(),
-				repo.SupportsLaravelEight.GetLogo(),
+				repo.SupportsLaravelTen.GetLogo(),
 				repo.SupportsPHPEight.GetLogo(),
 			},
 		})

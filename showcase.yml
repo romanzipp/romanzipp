@@ -1,155 +1,138 @@
 repositories:
   - name: DTO
-    type: 'php'
-    min_php: '7.4'
+    type: "php"
+    min_php: "7.4"
     min_laravel:
     has_php_stan: 1
-    supports_laravel9: 3
-    supports_laravel8: 3
+    supports_laravel10: 3
     supports_php8: 1
 
   - name: PHP-CS-Fixer-Config
-    type: 'php'
-    min_php: '7.4'
+    type: "php"
+    min_php: "7.4"
     min_laravel:
     has_php_stan: 1
-    supports_laravel9: 3
-    supports_laravel8: 3
+    supports_laravel10: 3
     supports_php8: 1
 
   - name: Laravel-DTO
-    type: 'laravel'
-    min_php: '8.0'
-    min_laravel: '9.0'
+    type: "laravel"
+    min_php: "8.0"
+    min_laravel: "9.0"
     has_php_stan: 1
-    supports_laravel9: 1
-    supports_laravel8: 1
+    supports_laravel10: 1
     supports_php8: 1
 
   - name: Laravel-Blockade
-    type: 'laravel'
-    min_php: '7.1'
-    min_laravel: '5.5'
+    type: "laravel"
+    min_php: "7.1"
+    min_laravel: "5.5"
     has_php_stan: 1
-    supports_laravel9: 1
-    supports_laravel8: 1
+    supports_laravel10: 1
     supports_php8: 1
 
   - name: Laravel-Console-List-Columns
-    type: 'laravel'
-    min_php: '7.2'
-    min_laravel: '5.5'
+    type: "laravel"
+    min_php: "7.2"
+    min_laravel: "5.5"
     has_php_stan: 1
-    supports_laravel9: 1
-    supports_laravel8: 1
+    supports_laravel10: 1
     supports_php8: 1
 
   - name: Laravel-Env-Diff
-    type: 'laravel'
-    min_php: '7.2'
-    min_laravel: '5.5'
+    type: "laravel"
+    min_php: "7.2"
+    min_laravel: "5.5"
     has_php_stan: 1
-    supports_laravel9: 1
-    supports_laravel8: 1
+    supports_laravel10: 1
     supports_php8: 1
 
   - name: Laravel-Env-Normalizer
-    type: 'laravel'
+    type: "laravel"
     new: true
-    min_php: '7.4'
-    min_laravel: '5.5'
+    min_php: "7.4"
+    min_laravel: "5.5"
     has_php_stan: 1
-    supports_laravel9: 1
-    supports_laravel8: 1
+    supports_laravel10: 1
     supports_php8: 1
 
   - name: Laravel-Make-File-Permissions
-    type: 'laravel'
-    min_php: '7.2'
-    min_laravel: '5.3'
+    type: "laravel"
+    min_php: "7.2"
+    min_laravel: "5.3"
     has_php_stan: 1
-    supports_laravel9: 1
-    supports_laravel8: 1
+    supports_laravel10: 1
     supports_php8: 1
 
   - name: Laravel-Migration-Generator
-    type: 'laravel'
-    min_php: '7.2'
-    min_laravel: '5.5'
+    type: "laravel"
+    min_php: "7.2"
+    min_laravel: "5.5"
     has_php_stan: 1
-    supports_laravel9: 1
-    supports_laravel8: 1
+    supports_laravel10: 1
     supports_php8: 1
 
   - name: Laravel-Model-Doc
     new: true
-    type: 'laravel'
-    min_php: '7.4'
-    min_laravel: '8.0'
+    type: "laravel"
+    min_php: "7.4"
+    min_laravel: "8.0"
     has_php_stan: 1
-    supports_laravel9: 1
-    supports_laravel8: 1
+    supports_laravel10: 1
     supports_php8: 1
 
   - name: Laravel-Previously-Deleted
-    type: 'laravel'
-    min_php: '7.2'
-    min_laravel: '5.4'
+    type: "laravel"
+    min_php: "7.2"
+    min_laravel: "5.4"
     has_php_stan: 1
-    supports_laravel9: 1
-    supports_laravel8: 1
+    supports_laravel10: 1
     supports_php8: 1
 
   - name: Laravel-Queue-Monitor
-    type: 'laravel'
-    min_php: '7.2'
-    min_laravel: '5.5'
+    type: "laravel"
+    min_php: "7.2"
+    min_laravel: "5.5"
     has_php_stan: 1
-    supports_laravel9: 1
-    supports_laravel8: 1
+    supports_laravel10: 1
     supports_php8: 1
 
   - name: Laravel-SEO
-    type: 'laravel'
-    min_php: '7.1'
-    min_laravel: '5.5'
+    type: "laravel"
+    min_php: "7.1"
+    min_laravel: "5.5"
     has_php_stan: 1
-    supports_laravel9: 1
-    supports_laravel8: 1
+    supports_laravel10: 1
     supports_php8: 1
 
   - name: Laravel-Skeleton
-    type: 'laravel'
+    type: "laravel"
     min_php:
     min_laravel:
     has_php_stan: 1
-    supports_laravel9: 1
-    supports_laravel8: 1
+    supports_laravel10: 1
     supports_php8: 1
 
   - name: Laravel-Turnstile
-    type: 'laravel'
-    min_php: '7.4'
-    min_laravel: '5.5'
+    type: "laravel"
+    min_php: "7.4"
+    min_laravel: "5.5"
     has_php_stan: 1
-    supports_laravel9: 1
-    supports_laravel8: 1
+    supports_laravel10: 1
     supports_php8: 1
 
   - name: Laravel-Twitch
-    type: 'laravel'
-    min_php: '7.2'
-    min_laravel: '5.5'
+    type: "laravel"
+    min_php: "7.2"
+    min_laravel: "5.5"
     has_php_stan: 1
-    supports_laravel9: 1
-    supports_laravel8: 1
+    supports_laravel10: 1
     supports_php8: 1
 
   - name: Laravel-Validator-Pizza
-    type: 'laravel'
-    min_php: '7.2'
-    min_laravel: '5.5'
+    type: "laravel"
+    min_php: "7.2"
+    min_laravel: "5.5"
     has_php_stan: 1
-    supports_laravel9: 1
-    supports_laravel8: 1
+    supports_laravel10: 1
     supports_php8: 1
