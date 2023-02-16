@@ -27,7 +27,7 @@ Selfhosted network monitoring tool using continious ping checks with web UI
 ### Open Source Packages
 
 |Package|^PHP|^Laravel|PHPStan|Laravel 10|PHP 8|
-|---|---|---|---|---|---|---|
+|---|---|---|---|---|---|
 |![](assets/logos/php.png) [**DTO**](https://github.com/romanzipp/DTO)|7.4||![](assets/logos/check.png)||![](assets/logos/check.png)|
 |![](assets/logos/php.png) [**PHP-CS-Fixer-Config**](https://github.com/romanzipp/PHP-CS-Fixer-Config)|7.4||![](assets/logos/check.png)||![](assets/logos/check.png)|
 |![](assets/logos/laravel.png) [**Laravel-DTO**](https://github.com/romanzipp/Laravel-DTO)|8.0|9.0|![](assets/logos/check.png)|![](assets/logos/check.png)|![](assets/logos/check.png)|
@@ -47,5 +47,5 @@ Selfhosted network monitoring tool using continious ping checks with web UI
 |![](assets/logos/laravel.png) [**Laravel-Validator-Pizza**](https://github.com/romanzipp/Laravel-Validator-Pizza)|7.2|5.5|![](assets/logos/check.png)|![](assets/logos/check.png)|![](assets/logos/check.png)|
 
 
-![](https://img.shields.io/badge/22,524-black?style=for-the-badge&color=3053c6&label=Commits&labelColor=black)
+![](https://img.shields.io/badge/22,525-black?style=for-the-badge&color=3053c6&label=Commits&labelColor=black)
 ![](https://img.shields.io/badge/1,016-black?style=for-the-badge&color=3053c6&label=Stars&labelColor=black)
