@@ -48,4 +48,4 @@ Selfhosted network monitoring tool using continious ping checks with web UI
 
 
 ![](https://img.shields.io/badge/23,910-black?style=for-the-badge&color=3053c6&label=Commits&labelColor=black)
-![](https://img.shields.io/badge/1,126-black?style=for-the-badge&color=3053c6&label=Stars&labelColor=black)
+![](https://img.shields.io/badge/1,132-black?style=for-the-badge&color=3053c6&label=Stars&labelColor=black)
