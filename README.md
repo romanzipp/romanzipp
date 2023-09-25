@@ -44,8 +44,8 @@ Selfhosted network monitoring tool using continious ping checks with web UI
 |![](assets/logos/laravel.png) [**Laravel-Skeleton**](https://github.com/romanzipp/Laravel-Skeleton)|||![](assets/logos/check.png)|![](assets/logos/check.png)|![](assets/logos/check.png)|
 |![](assets/logos/laravel.png) [**Laravel-Turnstile**](https://github.com/romanzipp/Laravel-Turnstile)|7.4|5.5|![](assets/logos/check.png)|![](assets/logos/check.png)|![](assets/logos/check.png)|
 |![](assets/logos/laravel.png) [**Laravel-Twitch**](https://github.com/romanzipp/Laravel-Twitch)|7.2|5.5|![](assets/logos/check.png)|![](assets/logos/check.png)|![](assets/logos/check.png)|
-|![](assets/logos/laravel.png) [**Laravel-Validator-Pizza**](https://github.com/romanzipp/Laravel-Validator-Pizza)|7.2|5.5|![](assets/logos/check.png)|![](assets/logos/check.png)|![](assets/logos/check.png)|
+|![](assets/logos/laravel.png) [**Laravel-MailCheck**](https://github.com/romanzipp/Laravel-MailCheck)|8.1|5.5|![](assets/logos/check.png)|![](assets/logos/check.png)|![](assets/logos/check.png)|
 
 
-![](https://img.shields.io/badge/24,333-black?style=for-the-badge&color=3053c6&label=Commits&labelColor=black)
+![](https://img.shields.io/badge/24,448-black?style=for-the-badge&color=3053c6&label=Commits&labelColor=black)
 ![](https://img.shields.io/badge/1,185-black?style=for-the-badge&color=3053c6&label=Stars&labelColor=black)
