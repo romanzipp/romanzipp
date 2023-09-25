@@ -129,9 +129,9 @@ repositories:
     supports_laravel10: 1
     supports_php8: 1
 
-  - name: Laravel-Validator-Pizza
+  - name: Laravel-MailCheck
     type: "laravel"
-    min_php: "7.2"
+    min_php: "8.1"
     min_laravel: "5.5"
     has_php_stan: 1
     supports_laravel10: 1
