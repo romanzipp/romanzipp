@@ -47,5 +47,5 @@ Selfhosted network monitoring tool using continious ping checks with web UI
 |![](assets/logos/laravel.png) [**Laravel-MailCheck**](https://github.com/romanzipp/Laravel-MailCheck)|8.1|5.5|![](assets/logos/check.png)|![](assets/logos/check.png)|![](assets/logos/check.png)|
 
 
-![](https://img.shields.io/badge/28,454-black?style=for-the-badge&color=3053c6&label=Commits&labelColor=black)
-![](https://img.shields.io/badge/1,367-black?style=for-the-badge&color=3053c6&label=Stars&labelColor=black)
+![](https://img.shields.io/badge/28,491-black?style=for-the-badge&color=3053c6&label=Commits&labelColor=black)
+![](https://img.shields.io/badge/1,371-black?style=for-the-badge&color=3053c6&label=Stars&labelColor=black)
