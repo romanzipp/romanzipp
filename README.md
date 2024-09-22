@@ -38,7 +38,6 @@ Selfhosted network monitoring tool using continious ping checks with web UI
 |![](assets/logos/laravel.png) [**Laravel-Make-File-Permissions**](https://github.com/romanzipp/Laravel-Make-File-Permissions)|7.2|5.3|![](assets/logos/check.png)|![](assets/logos/check.png)|![](assets/logos/check.png)|
 |![](assets/logos/laravel.png) [**Laravel-Migration-Generator**](https://github.com/romanzipp/Laravel-Migration-Generator)|7.2|5.5|![](assets/logos/check.png)|![](assets/logos/check.png)|![](assets/logos/check.png)|
 |![](assets/logos/laravel.png) [**Laravel-Model-Doc**](https://github.com/romanzipp/Laravel-Model-Doc)|7.4|8.0|![](assets/logos/check.png)|![](assets/logos/check.png)|![](assets/logos/check.png)|
-|![](assets/logos/laravel.png) [**Laravel-Projectable-Aggregates**](https://github.com/romanzipp/Laravel-Projectable-Aggregates)|8.3|10.0|![](assets/logos/check.png)|![](assets/logos/check.png)|![](assets/logos/check.png)|
 |![](assets/logos/laravel.png) [**Laravel-Previously-Deleted**](https://github.com/romanzipp/Laravel-Previously-Deleted)|7.2|5.4|![](assets/logos/check.png)|![](assets/logos/check.png)|![](assets/logos/check.png)|
 |![](assets/logos/laravel.png) [**Laravel-Queue-Monitor**](https://github.com/romanzipp/Laravel-Queue-Monitor)|7.2|5.5|![](assets/logos/check.png)|![](assets/logos/check.png)|![](assets/logos/check.png)|
 |![](assets/logos/laravel.png) [**Laravel-SEO**](https://github.com/romanzipp/Laravel-SEO)|7.1|5.5|![](assets/logos/check.png)|![](assets/logos/check.png)|![](assets/logos/check.png)|
@@ -48,5 +47,5 @@ Selfhosted network monitoring tool using continious ping checks with web UI
 |![](assets/logos/laravel.png) [**Laravel-MailCheck**](https://github.com/romanzipp/Laravel-MailCheck)|8.1|5.5|![](assets/logos/check.png)|![](assets/logos/check.png)|![](assets/logos/check.png)|
 
 
-![](https://img.shields.io/badge/29,972-black?style=for-the-badge&color=3053c6&label=Commits&labelColor=black)
-![](https://img.shields.io/badge/1,491-black?style=for-the-badge&color=3053c6&label=Stars&labelColor=black)
+![](https://img.shields.io/badge/30,077-black?style=for-the-badge&color=3053c6&label=Commits&labelColor=black)
+![](https://img.shields.io/badge/1,489-black?style=for-the-badge&color=3053c6&label=Stars&labelColor=black)
