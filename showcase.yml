@@ -1,7 +1,7 @@
 repositories:
   - name: DTO
     type: "php"
-    min_php: "7.4"
+    min_php: "8.0"
     min_laravel:
     has_php_stan: 1
     supports_laravel10: 3
@@ -17,7 +17,7 @@ repositories:
 
   - name: Laravel-DTO
     type: "laravel"
-    min_php: "8.0"
+    min_php: "8.1"
     min_laravel: "9.0"
     has_php_stan: 1
     supports_laravel10: 1
@@ -33,7 +33,7 @@ repositories:
 
   - name: Laravel-Console-List-Columns
     type: "laravel"
-    min_php: "7.2"
+    min_php: "8.0"
     min_laravel: "5.5"
     has_php_stan: 1
     supports_laravel10: 1
@@ -50,7 +50,7 @@ repositories:
   - name: Laravel-Env-Normalizer
     type: "laravel"
     new: true
-    min_php: "7.4"
+    min_php: "8.0"
     min_laravel: "5.5"
     has_php_stan: 1
     supports_laravel10: 1
@@ -75,7 +75,7 @@ repositories:
   - name: Laravel-Model-Doc
     new: true
     type: "laravel"
-    min_php: "7.4"
+    min_php: "8.2"
     min_laravel: "8.0"
     has_php_stan: 1
     supports_laravel10: 1
@@ -83,15 +83,23 @@ repositories:
 
   - name: Laravel-Previously-Deleted
     type: "laravel"
-    min_php: "7.2"
+    min_php: "8.0"
     min_laravel: "5.4"
+    has_php_stan: 1
+    supports_laravel10: 1
+    supports_php8: 1
+
+  - name: Laravel-Projectable-Aggregates
+    type: "laravel"
+    min_php: "8.3"
+    min_laravel: "10.0"
     has_php_stan: 1
     supports_laravel10: 1
     supports_php8: 1
 
   - name: Laravel-Queue-Monitor
     type: "laravel"
-    min_php: "7.2"
+    min_php: "8.0"
     min_laravel: "5.5"
     has_php_stan: 1
     supports_laravel10: 1
@@ -123,8 +131,8 @@ repositories:
 
   - name: Laravel-Twitch
     type: "laravel"
-    min_php: "7.2"
-    min_laravel: "5.5"
+    min_php: "8.0"
+    min_laravel: "7.0"
     has_php_stan: 1
     supports_laravel10: 1
     supports_php8: 1
