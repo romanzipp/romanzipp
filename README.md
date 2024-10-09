@@ -6,20 +6,11 @@ Primarily working with the [Laravel](https://laravel.com) Framework and building
 
 ### Languages
 
-- PHP
-- JavaSCript
-- Go
-- Ruby
-- Python
-- Rust
+PHP, JavaScript, Go, Ruby, Python, Rust
 
 ### Links
 
-- [Website & Portfolio](https://romanzipp.com)
-- [LinkedIn](https://www.linkedin.com/in/romanzipp/)
-- [Mastodon](https://mastodon.social/@romanzipp)
-- [Twitter](https://x.com/romanzipp)
-- [Instagram](https://www.instagram.com/romanzipp/)
+[Website & Portfolio](https://romanzipp.com) - [LinkedIn](https://www.linkedin.com/in/romanzipp/) - [Mastodon](https://mastodon.social/@romanzipp) - [Twitter](https://x.com/romanzipp) - [Instagram](https://www.instagram.com/romanzipp/)
 
 ### Selected Projects
 
@@ -60,5 +51,5 @@ Selfhosted network monitoring tool using continious ping checks with web UI
 |![](assets/logos/laravel.png) [**Laravel-MailCheck**](https://github.com/romanzipp/Laravel-MailCheck)|8.1|5.5|![](assets/logos/check.png)|![](assets/logos/check.png)|![](assets/logos/check.png)|
 
 
-![](https://img.shields.io/badge/30,300-black?style=for-the-badge&color=3053c6&label=Commits&labelColor=black)
+![](https://img.shields.io/badge/30,301-black?style=for-the-badge&color=3053c6&label=Commits&labelColor=black)
 ![](https://img.shields.io/badge/1,497-black?style=for-the-badge&color=3053c6&label=Stars&labelColor=black)
