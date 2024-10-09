@@ -6,20 +6,11 @@ Primarily working with the [Laravel](https://laravel.com) Framework and building
 
 ### Languages
 
-- PHP
-- JavaSCript
-- Go
-- Ruby
-- Python
-- Rust
+PHP, JavaScript, Go, Ruby, Python, Rust
 
 ### Links
 
-- [Website & Portfolio](https://romanzipp.com)
-- [LinkedIn](https://www.linkedin.com/in/romanzipp/)
-- [Mastodon](https://mastodon.social/@romanzipp)
-- [Twitter](https://x.com/romanzipp)
-- [Instagram](https://www.instagram.com/romanzipp/)
+[Website & Portfolio](https://romanzipp.com) - [LinkedIn](https://www.linkedin.com/in/romanzipp/) - [Mastodon](https://mastodon.social/@romanzipp) - [Twitter](https://x.com/romanzipp) - [Instagram](https://www.instagram.com/romanzipp/)
 
 ### Selected Projects
 
