@@ -1,18 +1,30 @@
 Hey ✌️
 
-I'm [**Roman**](https://ich.wtf). Developer at [PietSmiet](https://github.com/PietSmietde) & Student for Business Informatics.
+I'm [**Roman**](https://romanzipp.com). Developer at [PietSmiet](https://github.com/PietSmietde) & Student for Business Informatics.
 
 Primarily working with the [Laravel](https://laravel.com) Framework and building [Open Source packages](https://github.com/romanzipp?tab=repositories&q=Laravel).
 
-Coding in PHP, Go, Ruby, JavaScript, Python
+### Languages
 
-[![](https://img.shields.io/badge/Follow_@romanzipp-blue?logo=twitter&logoColor=white&style=for-the-badge)](https://twitter.com/romanzipp)
-[![](https://img.shields.io/badge/Sponsor%20%F0%9F%A4%8D-black?logo=github&logoColor=white&style=for-the-badge&color=b34bff)](https://github.com/sponsors/romanzipp)
-[![](https://img.shields.io/badge/Linkedin-black?logo=linkedin&logoColor=white&style=for-the-badge&color=0077b5)](https://www.linkedin.com/in/romanzipp/)
-[![](https://img.shields.io/badge/ich.wtf-black?logoColor=white&style=for-the-badge&color=3053c6&label=Website&labelColor=black)](https://ich.wtf)
+- PHP
+- JavaSCript
+- Go
+- Ruby
+- Python
+- Rust
+
+### Links
+
+- [Website & Portfolio](https://romanzipp.com)
+- [LinkedIn](https://www.linkedin.com/in/romanzipp/)
+- [Mastodon](https://mastodon.social/@romanzipp)
+- [Twitter](https://x.com/romanzipp)
+- [Instagram](https://www.instagram.com/romanzipp/)
 
 ### Selected Projects
 
+- [**Streamfinity**](https://streamfinity.tv)    
+Tools to bridge the gap between reaction streamers & video content creators while leveraging viewer engagement. Step up your reaction game! Streamfinity connects streamers, creators & communities in an unprecedented manner.
 - [**PietSmiet.de**](https://www.pietsmiet.de)    
 Videos & News Content Management System, Single Page Application, API, YouTube Synchronization handling thousands of users and providing over one Petabyte of content per month.
 - [**Don't Buy Games**](https://dontbuy.games)    
