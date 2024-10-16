@@ -1,12 +1,8 @@
 ### Hey ✌️
 
-I'm **Roman**. Software Engineer at **PietSmiet** & Student for Business Informatics. Primarily working on web projects and building Open Source packages.
+I'm **Roman**. Software Engineer at **PietSmiet** & Student for Business Informatics. Primarily working on web projects and building Open Source packages. Coding in PHP, JavaScript, Go, Ruby, Python & Rust.
 
-Since joining GitHub, I've since pushed **31,335** commits, opened **620** issues, submitted **1,184** pull requests and received **1,501** stars on GitHub.
-
-### Languages
-
-PHP, JavaScript, Go, Ruby, Python, Rust
+Since joining GitHub, I've since pushed **31,337** commits, opened **620** issues, submitted **1,184** pull requests and received **1,501** stars on GitHub.
 
 ### Links
 
