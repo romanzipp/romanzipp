@@ -1,8 +1,8 @@
-Hey ✌️
+### Hey ✌️
 
-I'm [**Roman**](https://romanzipp.com). Developer at [PietSmiet](https://github.com/PietSmietde) & Student for Business Informatics.
+I'm **Roman**. Software Engineer at **PietSmiet** & Student for Business Informatics. Primarily working on web projects and building Open Source packages.
 
-Primarily working with the [Laravel](https://laravel.com) Framework and building [Open Source packages](https://github.com/romanzipp?tab=repositories&q=Laravel).
+Since joining GitHub, I've since pushed **31,335** commits, opened **620** issues, submitted **1,184** pull requests and received **1,501** stars on GitHub.
 
 ### Languages
 
@@ -50,6 +50,3 @@ Selfhosted network monitoring tool using continious ping checks with web UI
 |![](assets/logos/laravel.png) [**Laravel-Twitch**](https://github.com/romanzipp/Laravel-Twitch)|8.0|7.0|![](assets/logos/check.png)|![](assets/logos/check.png)|![](assets/logos/check.png)|
 |![](assets/logos/laravel.png) [**Laravel-MailCheck**](https://github.com/romanzipp/Laravel-MailCheck)|8.1|5.5|![](assets/logos/check.png)|![](assets/logos/check.png)|![](assets/logos/check.png)|
 
-
-![](https://img.shields.io/badge/30,316-black?style=for-the-badge&color=3053c6&label=Commits&labelColor=black)
-![](https://img.shields.io/badge/1,499-black?style=for-the-badge&color=3053c6&label=Stars&labelColor=black)
