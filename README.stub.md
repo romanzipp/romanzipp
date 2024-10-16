@@ -1,8 +1,6 @@
-Hey ✌️
+### Hey ✌️
 
-I'm [**Roman**](https://romanzipp.com). Developer at [PietSmiet](https://github.com/PietSmietde) & Student for Business Informatics.
-
-Primarily working with the [Laravel](https://laravel.com) Framework and building [Open Source packages](https://github.com/romanzipp?tab=repositories&q=Laravel).
+I'm [**Roman**](https://romanzipp.com). Software Engineer at [PietSmiet](https://github.com/PietSmietde) & Student for Business Informatics. Primarily working on web projects and building [Open Source packages](https://github.com/romanzipp?tab=repositories&q=Laravel). I've since pushed **{commits}** commits, opened **{issues}** issues, submitted **{prs}** pull requests and received **{stars}** stars on GitHub.
 
 ### Languages
 
@@ -30,6 +28,3 @@ Selfhosted network monitoring tool using continious ping checks with web UI
 ### Open Source Packages
 
 {repositories}
-
-![](https://img.shields.io/badge/{commits}-black?style=for-the-badge&color=3053c6&label=Commits&labelColor=black)
-![](https://img.shields.io/badge/{stars}-black?style=for-the-badge&color=3053c6&label=Stars&labelColor=black)
