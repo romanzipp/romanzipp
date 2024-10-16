@@ -1,6 +1,8 @@
 ### Hey ✌️
 
-I'm [**Roman**](https://romanzipp.com). Software Engineer at [PietSmiet](https://github.com/PietSmietde) & Student for Business Informatics. Primarily working on web projects and building [Open Source packages](https://github.com/romanzipp?tab=repositories&q=Laravel). I've since pushed **{commits}** commits, opened **{issues}** issues, submitted **{prs}** pull requests and received **{stars}** stars on GitHub.
+I'm **Roman**. Software Engineer at **PietSmiet** & Student for Business Informatics. Primarily working on web projects and building Open Source packages.
+
+Since joining GitHub, I've since pushed **{commits}** commits, opened **{issues}** issues, submitted **{prs}** pull requests and received **{stars}** stars on GitHub.
 
 ### Languages
 

@@ -2,12 +2,14 @@ package main
 
 import (
 	"context"
+	"encoding/csv"
 	"fmt"
 	"io/ioutil"
 	"log"
 	"os"
 	"reflect"
 	"strings"
+	"time"
 
 	"github.com/fogleman/gg"
 	"github.com/google/go-github/v38/github"
@@ -29,6 +31,10 @@ type LocalizedInt int
 func (val LocalizedInt) PrettyPrint() string {
 	p := message.NewPrinter(language.English)
 	return p.Sprintf("%d", val)
+}
+
+func (val LocalizedInt) ToString() string {
+	return fmt.Sprintf("%d", val)
 }
 
 const (
@@ -125,12 +131,35 @@ func main() {
 		stargazzers.PrettyPrint(),
 	})
 
+	WriteStatsCsv([]string{
+		time.Now().Format("2006-01-02"),
+		commits.ToString(),
+		prs.ToString(),
+		issues.ToString(),
+		stargazzers.ToString(),
+	})
+
 	GenerateImage([]Line{
 		{"Commits", "assets/icons/git-commit-outline.png", commits},
 		{"Pull Requests", "assets/icons/git-pull-request-outline.png", prs},
 		{"Issues", "assets/icons/bug-outline.png", issues},
 		{"Stars", "assets/icons/star-outline.png", stargazzers},
 	})
+}
+
+func WriteStatsCsv(cols []string) {
+	file, err := os.OpenFile("stats.csv", os.O_APPEND|os.O_WRONLY, 0644)
+	if err != nil {
+		log.Fatalf("error opening file: %v", err)
+	}
+	defer file.Close()
+
+	writer := csv.NewWriter(file)
+	if err := writer.Write(cols); err != nil {
+		log.Fatalf("error writing to csv file: %v", err)
+	}
+
+	writer.Flush()
 }
 
 type RTable struct {
