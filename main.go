@@ -113,12 +113,16 @@ func main() {
 
 	repos := GetRepos(ctx, client)
 
+	log.Printf("Found %d repos", len(repos))
+
 	commits, prs, issues, stargazzers := GetGitHubStats(ctx, client, repos)
 
 	WriteReadme(ReadmeInformation{
 		GenerateReadmeRepositoriesTable(),
 		commits.PrettyPrint(),
 		stargazzers.PrettyPrint(),
+		issues.PrettyPrint(),
+		prs.PrettyPrint(),
 	})
 
 	GenerateImage([]Line{
@@ -142,6 +146,8 @@ type ReadmeInformation struct {
 	Repositories string `replace:"repositories"`
 	Commits      string `replace:"commits"`
 	Stars        string `replace:"stars"`
+	Issues       string `replace:"issues"`
+	PullRequests string `replace:"prs"`
 }
 
 func WriteReadme(data ReadmeInformation) {
@@ -232,6 +238,13 @@ func (repo ShowcaseRepository) GetBooleanImageUrl(val bool) string {
 	return ""
 }
 
+func max(a, b int) int {
+	if a > b {
+		return a
+	}
+	return b
+}
+
 func GetGitHubStats(ctx context.Context, client *github.Client, repos []*github.Repository) (LocalizedInt, LocalizedInt, LocalizedInt, LocalizedInt) {
 	user, _, err := client.Users.Get(ctx, "")
 	if err != nil {
@@ -239,56 +252,152 @@ func GetGitHubStats(ctx context.Context, client *github.Client, repos []*github.
 	}
 
 	fmt.Printf("Apparently you are %s\n", *user.Name)
-	fmt.Println("Let's start counting your commits")
 
 	var stargazzers int
 	var commits int
+	var issues int
+	var pulls int
+
+	searchPulls, _, err := client.Search.Issues(ctx, fmt.Sprintf("type:pr author:%s", *user.Login), &github.SearchOptions{
+		ListOptions: github.ListOptions{
+			PerPage: 100,
+		},
+	})
+
+	pulls = searchPulls.GetTotal()
+
+	searchIssues, _, err := client.Search.Issues(ctx, fmt.Sprintf("type:issue author:%s", *user.Login), &github.SearchOptions{
+		ListOptions: github.ListOptions{
+			PerPage: 100,
+		},
+	})
+
+	issues = searchIssues.GetTotal()
+
+	fmt.Println(pulls, issues)
 
 	for _, r := range repos {
-		c := GetRepoCommitCount(ctx, client, user, r)
-		//fmt.Printf("%d %s %s\n", c, strings.Repeat(" ", 8-len(fmt.Sprint(c))), *r.FullName)
+		com := GetRepoStats(ctx, client, user, r)
+
+		fmt.Printf("Repo stats: %s %s.. com: %d, iss: %d, prs: %d\n", *r.FullName, strings.Repeat(".", max(0, 50-len(*r.FullName))), com, iss, pul)
 
 		stargazzers = stargazzers + *r.StargazersCount
-		commits = commits + c
+		commits = commits + com
+
 	}
 
-	fmt.Printf("Wow, these are some %d thicc commits\n", commits)
+	fmt.Printf("Counted %d commits\n", commits)
 
-	return LocalizedInt(commits), LocalizedInt(0), LocalizedInt(0), LocalizedInt(stargazzers)
+	return LocalizedInt(commits), LocalizedInt(0), LocalizedInt(issues), LocalizedInt(stargazzers)
 }
 
-func GetRepoCommitCount(ctx context.Context, client *github.Client, user *github.User, repo *github.Repository) int {
+func GetRepoStats(ctx context.Context, client *github.Client, user *github.User, repo *github.Repository) (int, int, int) {
 	if *repo.Size == 0 {
-		return 0
+		return 0, 0, 0
 	}
 
 	pp := 100
-	clatest, res, err := client.Repositories.ListCommits(ctx, *repo.Owner.Login, *repo.Name, &github.CommitsListOptions{
+
+	var commits int
+	var issues int
+	var pulls int
+
+	// ----------------------- issues -----------------------
+
+	ilatest, ires, err := client.Issues.ListByRepo(ctx, *repo.Owner.Login, *repo.Name, &github.IssueListByRepoOptions{
+		Creator: *user.Login,
+		ListOptions: github.ListOptions{
+			PerPage: pp,
+		},
+	})
+
+	issues = len(ilatest)
+
+	if ires.LastPage > 0 {
+		ioldest, _, err := client.Issues.ListByRepo(ctx, *repo.Owner.Login, *repo.Name, &github.IssueListByRepoOptions{
+			Creator: *user.Login,
+			ListOptions: github.ListOptions{
+				Page:    ires.LastPage,
+				PerPage: pp,
+			},
+		})
+
+		if err != nil {
+			panic(err)
+		}
+
+		if err != nil {
+			issues = pp*(ires.LastPage-1) + len(ioldest)
+		}
+	}
+
+	// ----------------------- commits -----------------------
+
+	clatest, cres, err := client.Repositories.ListCommits(ctx, *repo.Owner.Login, *repo.Name, &github.CommitsListOptions{
 		Author: *user.Login,
 		ListOptions: github.ListOptions{
 			PerPage: pp,
 		},
 	})
-	if err != nil {
-		return 0
-	}
 
-	if res.LastPage == 0 {
-		return len(clatest)
-	}
-
-	coldest, _, err := client.Repositories.ListCommits(ctx, *repo.Owner.Login, *repo.Name, &github.CommitsListOptions{
-		Author: *user.Login,
-		ListOptions: github.ListOptions{
-			Page:    res.LastPage,
-			PerPage: pp,
-		},
-	})
 	if err != nil {
 		panic(err)
 	}
 
-	return pp*(res.LastPage-1) + len(coldest)
+	commits = len(clatest)
+
+	// if there are more pages, check the count in the last page
+
+	if cres.LastPage > 0 {
+		coldest, _, err := client.Repositories.ListCommits(ctx, *repo.Owner.Login, *repo.Name, &github.CommitsListOptions{
+			Author: *user.Login,
+			ListOptions: github.ListOptions{
+				Page:    cres.LastPage,
+				PerPage: pp,
+			},
+		})
+
+		if err != nil {
+			panic(err)
+		}
+
+		commits = pp*(cres.LastPage-1) + len(coldest)
+	}
+
+	// ----------------------- pull requests -----------------------
+	//
+	//log.Printf("%v\n", *user)
+
+	plastest, pres, err := client.PullRequests.List(ctx, *repo.Owner.Login, *repo.Name, &github.PullRequestListOptions{
+		State: "all",
+		ListOptions: github.ListOptions{
+			PerPage: pp,
+		},
+	})
+
+	if err != nil {
+		panic(err)
+	}
+
+	pulls = len(plastest)
+
+	if pres.LastPage > 0 {
+		poldest, _, err := client.PullRequests.List(ctx, *repo.Owner.Login, *repo.Name, &github.PullRequestListOptions{
+			State: "all",
+			ListOptions: github.ListOptions{
+				Page:    pres.LastPage,
+				PerPage: pp,
+			},
+		})
+
+		if err != nil {
+			panic(err)
+		}
+
+		pulls = pp*(pres.LastPage-1) + len(poldest)
+	}
+
+	return commits, issues, pulls
 }
 
 func GetRepos(ctx context.Context, client *github.Client) []*github.Repository {
