@@ -1,6 +1,6 @@
 ### Hey ✌️
 
-I'm **Roman**. Software Engineer at **PietSmiet** & Student for Business Informatics. Primarily working on web projects and building Open Source packages. Coding in PHP, JavaScript, Go, Ruby, Python & Rust.
+I'm **Roman**. Software Engineer at **Wunder Software** & Student for Business Informatics. Primarily working on web projects and building Open Source packages. Coding in PHP, JavaScript, Go, Ruby, Python & Rust.
 
 Since joining GitHub, I've pushed **{commits}** commits, opened **{issues}** issues, submitted **{prs}** pull requests and received **{stars}** stars on GitHub.
 
