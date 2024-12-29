@@ -2,7 +2,7 @@
 
 I'm **Roman**. Software Engineer at **Wunder Software** & Student for Business Informatics. Primarily working on web projects and building Open Source packages. Coding in PHP, JavaScript, Go, Ruby, Python & Rust.
 
-Since joining GitHub, I've pushed **18,249** commits, opened **625** issues, submitted **664** pull requests and received **1,526** stars on GitHub.
+Since joining GitHub, I've pushed **18,250** commits, opened **625** issues, submitted **664** pull requests and received **1,526** stars on GitHub.
 
 ### Links
 
