@@ -57,6 +57,8 @@ const (
 	LOGO_DOTS    = "![](assets/logos/dots.png)"
 )
 
+const COMMITS_COUNT_OFFSET = 13310
+
 type Showcase struct {
 	Repositories []ShowcaseRepository `yaml:"repositories"`
 }
@@ -295,7 +297,7 @@ func GetGitHubStats(ctx context.Context, client *github.Client, repos []*github.
 		},
 	})
 
-	commits = searchCommits.GetTotal()
+	commits = searchCommits.GetTotal() + COMMITS_COUNT_OFFSET
 
 	fmt.Printf("Counted %d commits\n", commits)
 
