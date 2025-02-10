@@ -2,7 +2,7 @@
 
 I'm **Roman**. Software Engineer at **Wunder Software** & Student for Business Informatics. Primarily working on web projects and building Open Source packages. Coding in PHP, JavaScript, Go, Ruby, Python & Rust.
 
-Since joining GitHub, I've pushed **32,052** commits, opened **639** issues, submitted **675** pull requests and received **1,541** stars on GitHub.
+Since joining GitHub, I've pushed **32,068** commits, opened **639** issues, submitted **676** pull requests and received **1,541** stars on GitHub.
 
 ### Links
 
@@ -14,6 +14,8 @@ Since joining GitHub, I've pushed **32,052** commits, opened **639** issues, sub
 Tools to bridge the gap between reaction streamers & video content creators while leveraging viewer engagement. Step up your reaction game! Streamfinity connects streamers, creators & communities in an unprecedented manner.
 - [**PietSmiet.de**](https://www.pietsmiet.de)    
 Videos & News Content Management System, Single Page Application, API, YouTube Synchronization handling thousands of users and providing over one Petabyte of content per month.
+- [**THE UNSEEN MAG**](https://theunseenmag.de/)    
+Female-founded online magazine, established in 2024, that showcases unique cultures and lifestyles to see the unseen.
 - [**Don't Buy Games**](https://dontbuy.games)    
 Web service for tracking game subscriptions like Xbox Game Pass, EA Play and Ubisoft+. Currently holding 650+ games
 - [**Get Better**](https://get-better.me)    
