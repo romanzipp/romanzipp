@@ -2,7 +2,7 @@
 
 I'm **Roman**. Software Engineer at **Wunder Software** & Student for Business Informatics. Primarily working on web projects and building Open Source packages. Coding in PHP, JavaScript, Go, Ruby, Python & Rust.
 
-Since joining GitHub, I've pushed **32,275** commits, opened **645** issues, submitted **680** pull requests and received **1,565** stars on GitHub.
+Since joining GitHub, I've pushed **32,300** commits, opened **645** issues, submitted **680** pull requests and received **1,565** stars on GitHub.
 
 ### Links
 
@@ -27,24 +27,24 @@ Selfhosted network monitoring tool using continious ping checks with web UI
 
 ### Open Source Packages
 
-|Package|^PHP|^Laravel|PHPStan|Laravel 10|PHP 8|
-|---|---|---|---|---|---|
-|![](assets/logos/php.png) [**DTO**](https://github.com/romanzipp/DTO)|8.0||![](assets/logos/check.png)||![](assets/logos/check.png)|
-|![](assets/logos/php.png) [**PHP-CS-Fixer-Config**](https://github.com/romanzipp/PHP-CS-Fixer-Config)|7.4||![](assets/logos/check.png)||![](assets/logos/check.png)|
-|![](assets/logos/laravel.png) [**Laravel-DTO**](https://github.com/romanzipp/Laravel-DTO)|8.1|9.0|![](assets/logos/check.png)|![](assets/logos/check.png)|![](assets/logos/check.png)|
-|![](assets/logos/laravel.png) [**Laravel-Blockade**](https://github.com/romanzipp/Laravel-Blockade)|7.1|5.5|![](assets/logos/check.png)|![](assets/logos/check.png)|![](assets/logos/check.png)|
-|![](assets/logos/laravel.png) [**Laravel-Console-List-Columns**](https://github.com/romanzipp/Laravel-Console-List-Columns)|8.0|5.5|![](assets/logos/check.png)|![](assets/logos/check.png)|![](assets/logos/check.png)|
-|![](assets/logos/laravel.png) [**Laravel-Env-Diff**](https://github.com/romanzipp/Laravel-Env-Diff)|7.2|5.5|![](assets/logos/check.png)|![](assets/logos/check.png)|![](assets/logos/check.png)|
-|![](assets/logos/laravel.png) [**Laravel-Env-Normalizer**](https://github.com/romanzipp/Laravel-Env-Normalizer)|8.0|5.5|![](assets/logos/check.png)|![](assets/logos/check.png)|![](assets/logos/check.png)|
-|![](assets/logos/laravel.png) [**Laravel-Make-File-Permissions**](https://github.com/romanzipp/Laravel-Make-File-Permissions)|7.2|5.3|![](assets/logos/check.png)|![](assets/logos/check.png)|![](assets/logos/check.png)|
-|![](assets/logos/laravel.png) [**Laravel-Migration-Generator**](https://github.com/romanzipp/Laravel-Migration-Generator)|7.2|5.5|![](assets/logos/check.png)|![](assets/logos/check.png)|![](assets/logos/check.png)|
-|![](assets/logos/laravel.png) [**Laravel-Model-Doc**](https://github.com/romanzipp/Laravel-Model-Doc)|8.2|8.0|![](assets/logos/check.png)|![](assets/logos/check.png)|![](assets/logos/check.png)|
-|![](assets/logos/laravel.png) [**Laravel-Previously-Deleted**](https://github.com/romanzipp/Laravel-Previously-Deleted)|8.0|5.4|![](assets/logos/check.png)|![](assets/logos/check.png)|![](assets/logos/check.png)|
-|![](assets/logos/laravel.png) [**Laravel-Projectable-Aggregates**](https://github.com/romanzipp/Laravel-Projectable-Aggregates)|8.3|10.0|![](assets/logos/check.png)|![](assets/logos/check.png)|![](assets/logos/check.png)|
-|![](assets/logos/laravel.png) [**Laravel-Queue-Monitor**](https://github.com/romanzipp/Laravel-Queue-Monitor)|8.0|5.5|![](assets/logos/check.png)|![](assets/logos/check.png)|![](assets/logos/check.png)|
-|![](assets/logos/laravel.png) [**Laravel-SEO**](https://github.com/romanzipp/Laravel-SEO)|7.1|5.5|![](assets/logos/check.png)|![](assets/logos/check.png)|![](assets/logos/check.png)|
-|![](assets/logos/laravel.png) [**Laravel-Skeleton**](https://github.com/romanzipp/Laravel-Skeleton)|||![](assets/logos/check.png)|![](assets/logos/check.png)|![](assets/logos/check.png)|
-|![](assets/logos/laravel.png) [**Laravel-Turnstile**](https://github.com/romanzipp/Laravel-Turnstile)|7.4|5.5|![](assets/logos/check.png)|![](assets/logos/check.png)|![](assets/logos/check.png)|
-|![](assets/logos/laravel.png) [**Laravel-Twitch**](https://github.com/romanzipp/Laravel-Twitch)|8.0|7.0|![](assets/logos/check.png)|![](assets/logos/check.png)|![](assets/logos/check.png)|
-|![](assets/logos/laravel.png) [**Laravel-MailCheck**](https://github.com/romanzipp/Laravel-MailCheck)|8.1|5.5|![](assets/logos/check.png)|![](assets/logos/check.png)|![](assets/logos/check.png)|
+|Package|^PHP|^Laravel|Laravel 12|PHP 8|
+|---|---|---|---|---|
+|![](assets/logos/php.png) [**DTO**](https://github.com/romanzipp/DTO)|8.1|||![](assets/logos/check.png)|
+|![](assets/logos/php.png) [**PHP-CS-Fixer-Config**](https://github.com/romanzipp/PHP-CS-Fixer-Config)|7.4|||![](assets/logos/check.png)|
+|![](assets/logos/laravel.png) [**Laravel-DTO**](https://github.com/romanzipp/Laravel-DTO)|8.1|9.0|![](assets/logos/check.png)|![](assets/logos/check.png)|
+|![](assets/logos/laravel.png) [**Laravel-Blockade**](https://github.com/romanzipp/Laravel-Blockade)|7.1|5.5|![](assets/logos/check.png)|![](assets/logos/check.png)|
+|![](assets/logos/laravel.png) [**Laravel-Console-List-Columns**](https://github.com/romanzipp/Laravel-Console-List-Columns)|8.0|5.5|![](assets/logos/check.png)|![](assets/logos/check.png)|
+|![](assets/logos/laravel.png) [**Laravel-Env-Diff**](https://github.com/romanzipp/Laravel-Env-Diff)|7.2|5.5|![](assets/logos/check.png)|![](assets/logos/check.png)|
+|![](assets/logos/laravel.png) [**Laravel-Env-Normalizer**](https://github.com/romanzipp/Laravel-Env-Normalizer)|8.0|5.4|![](assets/logos/check.png)|![](assets/logos/check.png)|
+|![](assets/logos/laravel.png) [**Laravel-Make-File-Permissions**](https://github.com/romanzipp/Laravel-Make-File-Permissions)|7.2|5.3|![](assets/logos/dots.png)|![](assets/logos/check.png)|
+|![](assets/logos/laravel.png) [**Laravel-Migration-Generator**](https://github.com/romanzipp/Laravel-Migration-Generator)|7.2|5.5|![](assets/logos/check.png)|![](assets/logos/check.png)|
+|![](assets/logos/laravel.png) [**Laravel-Model-Doc**](https://github.com/romanzipp/Laravel-Model-Doc)|8.2|10.0"|![](assets/logos/check.png)|![](assets/logos/check.png)|
+|![](assets/logos/laravel.png) [**Laravel-Previously-Deleted**](https://github.com/romanzipp/Laravel-Previously-Deleted)|8.0|5.4|![](assets/logos/check.png)|![](assets/logos/check.png)|
+|![](assets/logos/laravel.png) [**Laravel-Projectable-Aggregates**](https://github.com/romanzipp/Laravel-Projectable-Aggregates)|8.3|10.0|![](assets/logos/check.png)|![](assets/logos/check.png)|
+|![](assets/logos/laravel.png) [**Laravel-Queue-Monitor**](https://github.com/romanzipp/Laravel-Queue-Monitor)|8.0|5.5|![](assets/logos/check.png)|![](assets/logos/check.png)|
+|![](assets/logos/laravel.png) [**Laravel-SEO**](https://github.com/romanzipp/Laravel-SEO)|7.1|5.5|![](assets/logos/check.png)|![](assets/logos/check.png)|
+|![](assets/logos/laravel.png) [**Laravel-Skeleton**](https://github.com/romanzipp/Laravel-Skeleton)|||![](assets/logos/check.png)|![](assets/logos/check.png)|
+|![](assets/logos/laravel.png) [**Laravel-Turnstile**](https://github.com/romanzipp/Laravel-Turnstile)|7.4|5.5|![](assets/logos/check.png)|![](assets/logos/check.png)|
+|![](assets/logos/laravel.png) [**Laravel-Twitch**](https://github.com/romanzipp/Laravel-Twitch)|8.0|7.0|![](assets/logos/check.png)|![](assets/logos/check.png)|
+|![](assets/logos/laravel.png) [**Laravel-MailCheck**](https://github.com/romanzipp/Laravel-MailCheck)|8.1|5.5|![](assets/logos/check.png)|![](assets/logos/check.png)|
 
