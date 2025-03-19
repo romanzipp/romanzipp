@@ -220,11 +220,11 @@ func GenerateReadmeRepositoriesTable() string {
 		Rows: []RTableRow{
 			{
 				IsHeader: true,
-				Cols:     []string{"Package", "^PHP", "^Laravel", "PHPStan", "Laravel 10", "PHP 8"},
+				Cols:     []string{"Package", "^PHP", "^Laravel", "Laravel 12", "PHP 8"},
 			},
 			{
 				IsHeader: true,
-				Cols:     []string{"---", "---", "---", "---", "---", "---"},
+				Cols:     []string{"---", "---", "---", "---", "---"},
 			},
 		},
 	}
@@ -235,7 +235,6 @@ func GenerateReadmeRepositoriesTable() string {
 				repo.GetTableTitle(),
 				repo.MinPHP,
 				repo.MinLaravel,
-				repo.HasPhpStan.GetLogo(),
 				repo.SupportsLaravelTen.GetLogo(),
 				repo.SupportsPHPEight.GetLogo(),
 			},
