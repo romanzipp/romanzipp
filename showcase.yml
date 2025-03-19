@@ -24,21 +24,21 @@ repositories:
     type: "laravel"
     min_php: "7.1"
     min_laravel: "5.5"
-    supports_laravel10: 1
+    supports_laravel10: 2
     supports_php8: 1
 
   - name: Laravel-Console-List-Columns
     type: "laravel"
     min_php: "8.0"
     min_laravel: "5.5"
-    supports_laravel10: 1
+    supports_laravel10: 2
     supports_php8: 1
 
   - name: Laravel-Env-Diff
     type: "laravel"
     min_php: "7.2"
     min_laravel: "5.5"
-    supports_laravel10: 1
+    supports_laravel10: 2
     supports_php8: 1
 
   - name: Laravel-Env-Normalizer
@@ -46,7 +46,7 @@ repositories:
     new: true
     min_php: "8.0"
     min_laravel: "5.4"
-    supports_laravel10: 1
+    supports_laravel10: 2
     supports_php8: 1
 
   - name: Laravel-Make-File-Permissions
@@ -60,7 +60,7 @@ repositories:
     type: "laravel"
     min_php: "7.2"
     min_laravel: "5.5"
-    supports_laravel10: 1
+    supports_laravel10: 2
     supports_php8: 1
 
   - name: Laravel-Model-Doc
@@ -75,7 +75,7 @@ repositories:
     type: "laravel"
     min_php: "8.0"
     min_laravel: "5.4"
-    supports_laravel10: 1
+    supports_laravel10: 2
     supports_php8: 1
 
   - name: Laravel-Projectable-Aggregates
@@ -103,7 +103,7 @@ repositories:
     type: "laravel"
     min_php:
     min_laravel:
-    supports_laravel10: 1
+    supports_laravel10: 2
     supports_php8: 1
 
   - name: Laravel-Turnstile
@@ -124,5 +124,5 @@ repositories:
     type: "laravel"
     min_php: "8.1"
     min_laravel: "5.5"
-    supports_laravel10: 1
+    supports_laravel10: 2
     supports_php8: 1
