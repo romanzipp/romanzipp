@@ -57,7 +57,7 @@ const (
 	LOGO_DOTS    = "![](assets/logos/dots.png)"
 )
 
-const COMMITS_COUNT_OFFSET = 13310
+const COMMITS_COUNT_OFFSET = 13310 + 272
 
 type Showcase struct {
 	Repositories []ShowcaseRepository `yaml:"repositories"`
@@ -150,7 +150,7 @@ func main() {
 }
 
 func WriteStatsCsv(cols []string) {
-	file, err := os.OpenFile("stats.csv", os.O_APPEND|os.O_WRONLY, 0644)
+	file, err := os.OpenFile("stats.csv", os.O_APPEND|os.O_WRONLY, 0o644)
 	if err != nil {
 		log.Fatalf("error opening file: %v", err)
 	}
@@ -196,7 +196,7 @@ func WriteReadme(data ReadmeInformation) {
 		content = strings.Replace(content, fmt.Sprintf("{%s}", name), value, -1)
 	}
 
-	err = ioutil.WriteFile("README.md", []byte(content), 0644)
+	err = ioutil.WriteFile("README.md", []byte(content), 0o644)
 	if err != nil {
 		log.Fatalf("error writing readme: %v", err)
 	}
