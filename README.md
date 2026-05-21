@@ -2,7 +2,10 @@
 
 I'm **Roman**. Founding Engineer (Cloud Platform) at [**enum**](https://enum.co). I code and sometimes write stuff on [my blog](https://romanzipp.com/blog).
 
-Since joining GitHub, I've pushed **34,232** commits, opened **710** issues, submitted **711** pull requests and received **1,656** stars on GitHub.
+Since joining GitHub, I've pushed **34,234** commits, opened **710** issues, submitted **711** pull requests and received **1,656** stars.
+
+> [!TIP]
+> Move your stack off US hyperscalers at [enum.co](https://enum.co/?ref=github.com/romanzipp)
 
 ### [romanzipp.com](https://romanzipp.com/?ref=github.com)
 
