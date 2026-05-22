@@ -1,6 +1,6 @@
 ### Hey ✌️
 
-I'm **Roman**. Founding Engineer (Cloud Platform) at [**enum**](https://enum.co). I code and sometimes write stuff on [my blog](https://romanzipp.com/blog).
+I'm **Roman**. Founding Engineer (Cloud Platform) at [**enum**](https://enum.co). I code and sometimes write stuff on [my blog](https://romanzipp.com/blog?ref=github.com).
 
 Since joining GitHub, I've pushed **{commits}** commits, opened **{issues}** issues, submitted **{prs}** pull requests and received **{stars}** stars.
 
