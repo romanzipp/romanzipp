@@ -57,7 +57,7 @@ const (
 	LOGO_DOTS    = "![](assets/logos/dots.png)"
 )
 
-const COMMITS_COUNT_OFFSET = 13310 + 272
+const COMMITS_COUNT_OFFSET = 13310 + 272 + 602
 
 type Showcase struct {
 	Repositories []ShowcaseRepository `yaml:"repositories"`
