@@ -11,7 +11,6 @@ import (
 	"strings"
 	"time"
 
-	"github.com/fogleman/gg"
 	"github.com/google/go-github/v38/github"
 	"github.com/joho/godotenv"
 	"golang.org/x/oauth2"
@@ -19,12 +18,6 @@ import (
 	"golang.org/x/text/message"
 	"gopkg.in/yaml.v2"
 )
-
-type Line struct {
-	Title string
-	Icon  string
-	Value LocalizedInt
-}
 
 type LocalizedInt int
 
@@ -139,13 +132,6 @@ func main() {
 		prs.ToString(),
 		issues.ToString(),
 		stargazzers.ToString(),
-	})
-
-	GenerateImage([]Line{
-		{"Commits", "assets/icons/git-commit-outline.png", commits},
-		{"Pull Requests", "assets/icons/git-pull-request-outline.png", prs},
-		{"Issues", "assets/icons/bug-outline.png", issues},
-		{"Stars", "assets/icons/star-outline.png", stargazzers},
 	})
 }
 
@@ -380,46 +366,4 @@ func GetOrgs(ctx context.Context, client *github.Client) []*github.Organization 
 	}
 
 	return orgs
-}
-
-func GenerateImage(lines []Line) {
-	// actual size: 600 x 400
-	// border margins: 34
-	const w = 600
-	const h = 400
-	const m = 34 + 20
-
-	lh := (h - m*2) / len(lines)
-
-	img, err := gg.LoadImage("assets/src.png")
-	if err != nil {
-		log.Fatal(err)
-	}
-
-	dc := gg.NewContext(600, 400)
-	dc.SetRGB(0, 0, 0)
-
-	if err := dc.LoadFontFace("assets/Inter-Bold.ttf", 35); err != nil {
-		panic(err)
-	}
-
-	dc.DrawImage(img, 0, 0)
-
-	for i, line := range lines {
-		icn, err := gg.LoadImage(line.Icon)
-		if err != nil {
-			log.Fatal(err)
-		}
-
-		dc.DrawImage(icn, m+10, int(lh*(i+1)))
-
-		dc.SetRGB(0, 0, 0)
-		dc.DrawStringAnchored(line.Title, m+10+30+20, float64(lh*(i+1)), 0, 1)
-
-		dc.SetHexColor("#ef1818")
-		dc.DrawStringAnchored(line.Value.PrettyPrint(), w-m-30, float64(lh*(i+1)), 1, 1)
-	}
-
-	dc.Clip()
-	dc.SavePNG("assets/out.png")
 }
