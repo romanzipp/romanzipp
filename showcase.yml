@@ -15,87 +15,87 @@ repositories:
 
   - name: Laravel-DTO
     type: "laravel"
-    min_php: "8.1"
-    min_laravel: "9.0"
+    min_php: "8.3"
+    min_laravel: "12.0"
     supports_laravel10: 1
     supports_php8: 1
 
   - name: Laravel-Blockade
     type: "laravel"
-    min_php: "7.1"
-    min_laravel: "5.5"
-    supports_laravel10: 2
+    min_php: "8.3"
+    min_laravel: "12.0"
+    supports_laravel10: 1
     supports_php8: 1
 
   - name: Laravel-Console-List-Columns
     type: "laravel"
-    min_php: "8.0"
-    min_laravel: "5.5"
-    supports_laravel10: 2
+    min_php: "8.3"
+    min_laravel: "12.0"
+    supports_laravel10: 1
     supports_php8: 1
 
   - name: Laravel-Env-Diff
     type: "laravel"
-    min_php: "7.2"
-    min_laravel: "5.5"
-    supports_laravel10: 2
+    min_php: "8.2"
+    min_laravel: "12.0"
+    supports_laravel10: 1
     supports_php8: 1
 
   - name: Laravel-Env-Normalizer
     type: "laravel"
     new: true
-    min_php: "8.0"
-    min_laravel: "5.4"
-    supports_laravel10: 2
+    min_php: "8.2"
+    min_laravel: "12.0"
+    supports_laravel10: 1
     supports_php8: 1
 
   - name: Laravel-Make-File-Permissions
     type: "laravel"
-    min_php: "7.2"
-    min_laravel: "5.3"
-    supports_laravel10: 2
+    min_php: "8.2"
+    min_laravel: "12.0"
+    supports_laravel10: 1
     supports_php8: 1
 
   - name: Laravel-Migration-Generator
     type: "laravel"
-    min_php: "7.2"
-    min_laravel: "5.5"
-    supports_laravel10: 2
+    min_php: "8.2"
+    min_laravel: "12.0"
+    supports_laravel10: 1
     supports_php8: 1
 
   - name: Laravel-Model-Doc
     new: true
     type: "laravel"
-    min_php: "8.2"
-    min_laravel: 10.0"
+    min_php: "8.3"
+    min_laravel: "12.0"
     supports_laravel10: 1
     supports_php8: 1
 
   - name: Laravel-Previously-Deleted
     type: "laravel"
-    min_php: "8.0"
-    min_laravel: "5.4"
-    supports_laravel10: 2
+    min_php: "8.3"
+    min_laravel: "12.0"
+    supports_laravel10: 1
     supports_php8: 1
 
   - name: Laravel-Projectable-Aggregates
     type: "laravel"
     min_php: "8.3"
-    min_laravel: "10.0"
+    min_laravel: "12.0"
     supports_laravel10: 1
     supports_php8: 1
 
   - name: Laravel-Queue-Monitor
     type: "laravel"
-    min_php: "8.0"
-    min_laravel: "5.5"
+    min_php: "8.2"
+    min_laravel: "12.0"
     supports_laravel10: 1
     supports_php8: 1
 
   - name: Laravel-SEO
     type: "laravel"
-    min_php: "7.1"
-    min_laravel: "5.5"
+    min_php: "8.2"
+    min_laravel: "12.0"
     supports_laravel10: 1
     supports_php8: 1
 
@@ -103,26 +103,26 @@ repositories:
     type: "laravel"
     min_php:
     min_laravel:
-    supports_laravel10: 2
+    supports_laravel10: 1
     supports_php8: 1
 
   - name: Laravel-Turnstile
     type: "laravel"
-    min_php: "7.4"
-    min_laravel: "5.5"
+    min_php: "8.2"
+    min_laravel: "12.0"
     supports_laravel10: 1
     supports_php8: 1
 
   - name: Laravel-Twitch
     type: "laravel"
-    min_php: "8.0"
-    min_laravel: "7.0"
+    min_php: "8.2"
+    min_laravel: "12.0"
     supports_laravel10: 1
     supports_php8: 1
 
   - name: Laravel-MailCheck
     type: "laravel"
-    min_php: "8.1"
-    min_laravel: "5.5"
-    supports_laravel10: 2
+    min_php: "8.3"
+    min_laravel: "12.0"
+    supports_laravel10: 1
     supports_php8: 1

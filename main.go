@@ -220,7 +220,7 @@ func GenerateReadmeRepositoriesTable() string {
 		Rows: []RTableRow{
 			{
 				IsHeader: true,
-				Cols:     []string{"Package", "^PHP", "^Laravel", "Laravel 12", "PHP 8"},
+				Cols:     []string{"Package", "^PHP", "^Laravel", "Laravel 13", "PHP 8"},
 			},
 			{
 				IsHeader: true,
