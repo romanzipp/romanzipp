@@ -2,7 +2,7 @@
 
 I'm **Roman**. Founding Engineer (Cloud Platform) at [**enum**](https://enum.co). I code and sometimes write stuff on [my blog](https://romanzipp.com/blog?ref=github.com).
 
-Since joining GitHub, I've pushed **33,095** commits, opened **674** issues, submitted **723** pull requests and received **1,663** stars.
+Since joining GitHub, I've pushed **33,099** commits, opened **674** issues, submitted **723** pull requests and received **1,661** stars.
 
 ### [enum.co](https://enum.co/?ref=github.com/romanzipp)
 
